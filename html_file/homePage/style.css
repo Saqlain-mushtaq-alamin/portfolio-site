@@ -7,9 +7,9 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-/*E3E3E3*/
 .head {
     position: relative;
     /* You can also use 'absolute' or 'fixed' depending on use case */
@@ -28,16 +28,7 @@ spline-viewer {
     display: block;
 }
 
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Arial', sans-serif;
-}
 
 .header {
     display: flex;
@@ -69,4 +60,286 @@ body {
 
 .navbar .nav-links li a:hover {
     color: #00bcd4;
+}
+
+
+.chatHeader {
+    background-color: #e3e3e3;
+    /* matching your header background */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    /* rounded corners for a soft look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* subtle shadow for depth */
+    margin: 20px auto;
+    max-width: 800px;
+    /* centered and limited width */
+}
+
+.chatqus {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    /* dark text for contrast */
+    font-family: 'Arial', sans-serif;
+}
+
+.chatbtn {
+    background-color: #00bcd4;
+    /* bright blue */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.chatbtn:hover {
+    background-color: #0097a7;
+    /* darker blue on hover */
+    transform: scale(1.05);
+}
+
+.midealinker {
+
+    gap: 16px;
+    justify-content: flex-start;
+    /* left-aligned */
+    align-items: center;
+    background-color: #f5f5f5;
+    /* soft light gray, slightly brighter than #e3e3e3 */
+    padding: 15px 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    /* pushes it away from top and left */
+    border-right: 4px solid #00bcd4;
+    /* accent border for style */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* subtle shadow */
+    max-width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+.midealinker:hover {
+    background-color: #e3e3e3;
+    /* matches your theme on hover */
+}
+
+.midealinker a {
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.midealinker img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    filter: grayscale(30%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.midealinker a:hover img {
+    filter: none;
+    transform: scale(1.1);
+}
+
+
+
+.midealink {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 15px 30px;
+    max-width: 300px;
+
+    /* bright blue background */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.midealink:hover {
+    background-color: #a9dfe6;
+    /* slightly darker blue on hover */
+}
+
+.midealink a {
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.midealink img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: grayscale(40%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.midealink a:hover img {
+    filter: none;
+    transform: scale(1.15);
+}
+
+.wallcamingspeach {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #333;
+
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* fixed: added blur radius and color */
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+
+.wallcamingspeach:hover {
+    background-color: #e6e5e5;
+
+}
+
+
+/*bio section*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.biosaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 80px;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+     
+}
+
+.aboutme {
+    flex: 1;
+    min-width: 300px;
+    max-width: 55%;
+}
+
+.bioheading {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.biopara {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.downbtn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.downbtn a {
+    color: white;
+    text-decoration: none;
+}
+
+.downbtn:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}
+
+.photo2 {
+    margin-top: 40px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.photo2 img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo2 img:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .biosaction {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .aboutme, .photo2 {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .biopara {
+        text-align: center;
+    }
 }
