@@ -1,0 +1,153 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #1f1f1f 30%, transparent 80%);
+    padding: 20px;
+    text-align: left;
+}
+
+
+.header h1 {
+    color: #00ffcc;
+    font-size: 2.5rem;
+}
+
+
+
+/* Flex container for intro + photo */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+/* Left column (text) */
+.introText {
+    flex: 1;
+    min-width: 300px;
+
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+.introline {
+    font-size: 1.2rem;
+    color: #aaa;
+     
+    margin-bottom: 10px;
+}
+
+.maneText {
+    font-size: 2rem;
+    color: #ffffff;
+     
+    margin-bottom: 20px;
+}
+
+.highlight-name {
+    color: rgb(214, 48, 48);
+    font-size: 3.5rem; /* or larger depending on your needs */
+    font-weight: bold;
+}
+
+
+.subIntro {
+    font-size: 1rem;
+    color: #cccccc;
+     
+    margin-bottom: 30px;
+}
+
+/* Button */
+.interButtonn {
+    text-align: right;
+}
+
+.inbutton {
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.inbutton:hover {
+    background-color: #00cc99;
+}
+
+.inbutton a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Right column (photo) */
+.photo {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.photo img {
+    padding-bottom: 45px;
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    /* zooms the image by 10% */
+    transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.2);
+    /* zooms more on hover */
+}
+
+.footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    color: #888;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #00ffcc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #00cc99;
+}
