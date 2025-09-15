@@ -36,14 +36,102 @@
                 — from idea to execution.
             </h1>
 
-
             <div class="scroll-indicator">
                 <span></span>
             </div>
 
+
         </div>
+
     </section>
 
+    <div class="projectDisplay">
+        <div class="project-header">
+            <h1 class="projectMainHader">
+                My Process <br>
+                HOW I CREATE YOUR PATH TO SUCCESS
+            </h1>
+            <h4 class="projectmainText">
+                Save countless hours and streamline your motion workflow with Lottie Creator, or design right within
+                your favorite tools and export it as a Lottie with our integrations. We make motion design easy.
+            </h4>
+        </div>
+
+        <div class="toolslink">
+            <a href="#" data-sort="python"><img src="logo/python.png" alt="python"></a>
+            <a href="#" data-sort="java"><img src="logo/java.png" alt="java"></a>
+            <a href="#" data-sort="flutter"><img src="logo/flutter.png" alt="flutter"></a>
+        </div>
+
+        <div class="project-display-area">
+            <ul id="projectList">
+                <li data-tool="python">
+                    <div class="project">
+                        <h1 class="name">Finura</h1>
+                        <p class="tagline">BudgetBot App</p>
+                        <p class="description">A smart budgeting assistant to help track your expenses.</p>
+                        <button>Read More</button>
+                    </div>
+                </li>
+
+                <li data-tool="java">
+                    <div class="project">
+                        <h1 class="name">EduMate</h1>
+                        <p class="tagline">E-learning Platform</p>
+                        <p class="description">Online learning platform offering interactive video courses.</p>
+                        <button>Read More</button>
+                    </div>
+                </li>
+
+                <li data-tool="flutter">
+                    <div class="project">
+                        <h1 class="name">HealthTrack</h1>
+                        <p class="tagline">Fitness & Diet App</p>
+                        <p class="description">Personalized health tracking with meal and workout plans.</p>
+                        <button>Read More</button>
+                    </div>
+                </li>
+
+                <li data-tool="java">
+                    <div class="project">
+                        <h1 class="name">CodeConnect</h1>
+                        <p class="tagline">Developer Community</p>
+                        <p class="description">A social platform for developers to share projects and collaborate.</p>
+                        <button>Read More</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        const toolsLinks = document.querySelectorAll('.toolslink a');
+        const projectList = document.getElementById('projectList');
+
+        toolsLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const tool = link.getAttribute('data-sort');
+
+                // Get all project items as array
+                const items = Array.from(projectList.querySelectorAll('li'));
+
+                // Filter or rearrange projects - example: show only projects that match tool
+                const filtered = items.filter(item => item.getAttribute('data-tool') === tool);
+
+                // Clear list and append filtered projects
+                projectList.innerHTML = '';
+                filtered.forEach(item => projectList.appendChild(item));
+            });
+        });
+    </script>
+
+
+<div class="shere-your-idea">
+    contoct me for impiment you idea
+
+</div>
 
 
 
