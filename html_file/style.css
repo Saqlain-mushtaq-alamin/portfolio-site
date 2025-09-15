@@ -112,7 +112,7 @@ body {
     flex: 1;
     min-width: 250px;
     text-align: center;
-    background-color: #1a1a1a;
+     background: linear-gradient(to top, #1f1f1f 20%, transparent 80%);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
@@ -151,3 +151,7 @@ body {
 .footer a:hover {
     color: #00cc99;
 }
+
+
+
+ 
