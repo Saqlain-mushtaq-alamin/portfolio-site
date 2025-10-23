@@ -19,11 +19,13 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(to right, #1f1f1f 30%, transparent 80%);
+    background: linear-gradient(to right, #3e4a4d 30%, transparent 60%);
     padding: 20px;
     text-align: left;
-}
 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+}
 
 .header h1 {
     color: #00ffcc;
@@ -113,45 +115,92 @@ body {
     flex: 1;
     min-width: 250px;
     text-align: center;
-    background: linear-gradient(to top, #1f1f1f 20%, transparent 80%);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
+    background: linear-gradient(to top right, rgba(15, 15, 15, 0.8), rgba(30, 30, 30, 0.4));
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 255, 204, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 204, 0.2);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease;
+    animation: photoEntry 3s ease forwards;
 }
 
+/* The glow overlay */
+.photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 255, 204, 0.15), rgba(0, 201, 255, 0.05));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    animation: glowEntry 5s ease forwards;
+    animation-delay: 0.7s; /* slight delay for smooth sequencing */
+}
+
+/* Hover (still works normally after load) */
+.photo:hover::before {
+    opacity: 1;
+}
+
+.photo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 255, 204, 0.2);
+}
+
+/* Image styling */
 .photo img {
-    padding-bottom: 45px;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
-    transform: scale(1.2);
-    /* zooms the image by 10% */
-    transition: transform 0.3s ease;
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: brightness(0.9) saturate(1.1);
 }
 
 .photo img:hover {
-    transform: scale(1.2);
-    /* zooms more on hover */
+    transform: scale(1.1);
+    filter: brightness(1.1) saturate(1.3);
 }
 
-.footer {
-    background-color: #1f1f1f;
-    padding: 20px;
-    text-align: center;
-    color: #888;
-    margin-top: 40px;
-    border-top: 1px solid #333;
-    font-size: 0.9rem;
+/* Keyframes for page-load entry animation */
+@keyframes glowEntry {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-.footer a {
-    color: #00ffcc;
-    text-decoration: none;
-    margin: 0 10px;
+@keyframes photoEntry {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        box-shadow: 0 4px 30px rgba(0, 255, 204, 0.0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-6px);
+        box-shadow: 0 8px 25px rgba(0, 255, 204, 0.2);
+    }
 }
 
-.footer a:hover {
-    color: #00cc99;
+
+
+/* Image styling */
+.photo img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: brightness(0.9) saturate(1.1);
 }
+
+.photo img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1) saturate(1.3);
+}
+
+
+ 
 
 
 
