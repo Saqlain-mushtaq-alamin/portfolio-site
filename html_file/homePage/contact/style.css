@@ -176,6 +176,8 @@ body {
     position: relative;
     width: 100%;
     max-width: 700px;
+    margin-right: 250px;
+
 }
 
 
@@ -183,6 +185,7 @@ body {
 /* Spline Viewer matches content size */
 .spline-bg {
     position: absolute;
+
     top: 0;
     left: 0;
     width: 100%;
@@ -197,6 +200,8 @@ body {
 
 .social-content {
     position: relative;
+
+
     z-index: 2;
     text-align: center;
     padding: 4rem 2rem;
@@ -297,23 +302,26 @@ body {
 
 /* Resume Section */
 .download-resume {
+    background-color: #000622;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 6rem 2rem;
-    background: linear-gradient(145deg, #000d2b, #001132);
-    min-height: 100vh;
+
+    min-height: 10vh;
     overflow: hidden;
     position: relative;
 }
 
 /* Content Box */
 .resume-content {
+    margin-left: 250px;
+
     text-align: center;
     background: rgba(0, 10, 30, 0.5);
     border-radius: 20px;
     padding: 3rem 2rem;
-    max-width: 600px;
+    max-width: 800px;
     box-shadow:
         0 10px 30px rgba(0, 200, 255, 0.15),
         inset 0 0 15px rgba(0, 200, 255, 0.05);
@@ -359,34 +367,7 @@ body {
     box-shadow: 0 12px 25px rgba(0, 200, 255, 0.6);
 }
 
-/* Fade-in Animation */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50px) scale(0.95);
-    }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    .resume-content h2 {
-        font-size: 2rem;
-    }
-
-    .resume-content p {
-        font-size: 1rem;
-    }
-
-    .download-btn {
-        font-size: 1rem;
-        padding: 0.6rem 1.4rem;
-    }
-}
 
 
 
@@ -399,8 +380,8 @@ body {
     justify-content: center;
     padding: 3rem;
     gap: 4rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 30px;
+    background-color: #000622;
+ 
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
