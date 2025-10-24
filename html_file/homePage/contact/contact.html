@@ -5,112 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="style.css"><!-- fixed: correct relative path -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 
 <body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">Saqlain</h1>
 
-    <body>
-        <header class="header">
-            <div class="header-container">
-                <h1 class="logo">Saqlain</h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="../homePage.html">Home</a></li>
+                    <li><a href="../homePage.html#about">About</a></li>
+                    <li><a href="../project/project.html">Projects</a></li>
+                    <li><a href="../skill/skill.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-                <nav class="navbar">
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="project/project.html">Projects</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </header>
-
-        <header class="header2">
-            <h2>“Feel free to get in touch for collaboration, freelance work, or just to say hi!”</h2>
-        </header>
+    <header class="header2">
+        <h2>“Feel free to get in touch for collaboration, freelance work, or just to say hi!”</h2>
+    </header>
 
 
-        <section class="social-like">
-            <div class="social-wrapper">
-                <!-- Spline Viewer Background -->
-                <spline-viewer url="https://prod.spline.design/pkhBH-bVrDTNGqfp/scene.splinecode"
-                    class="spline-bg"></spline-viewer>
+    <section class="social-like">
+        <div class="social-wrapper">
+            <!-- Spline Viewer Background -->
+            <spline-viewer url="https://prod.spline.design/pkhBH-bVrDTNGqfp/scene.splinecode"
+                class="spline-bg"></spline-viewer>
 
-                <!-- Overlay Content -->
-                <div class="social-content">
-                    <h2>Connect with Us</h2>
-                    <p>Follow us on social media for updates, behind-the-scenes, and more.</p>
-                    <div class="social-icons">
-                        <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+            <!-- Overlay Content -->
+            <div class="social-content">
+                <h2>Connect with Us</h2>
+                <p>Follow us on social media for updates, behind-the-scenes, and more.</p>
+                <div class="social-icons">
+                    <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-        </section>
-
-
-
-        <section class="download-resume">
-
-
-            <!-- Content Overlay -->
-            <div class="resume-content">
-                <h2>Get My Resume</h2>
-                <p>Click the button below to download my latest resume in PDF format.</p>
-                <a href="your-resume.pdf" download class="download-btn">
-                    <i class="fas fa-download"></i> Download Resume
-                </a>
-            </div>
-        </section>
-
-        <div class="show-location">
-
-            <div class="show-location-content">
-                <h1 class="show-location-header">
-                    Our Location
-                </h1>
-                <h4 class="show-location-text">
-                    Want to meet in person? Here's where you can find us. Feel free to reach out and schedule a visit!
-                </h4>
-                <button class="show-location-button">View on Map</button>
-            </div>
-            <spline-viewer url="https://prod.spline.design/VlKQqHVhF3Qqka3v/scene.splinecode"></spline-viewer>
-
         </div>
+    </section>
+
+
+
+    <section class="download-resume">
+
+
+        <!-- Content Overlay -->
+        <div class="resume-content">
+            <h2>Get My Resume</h2>
+            <p>Click the button below to download my latest resume in PDF format.</p>
+            <a href="your-resume.pdf" download class="download-btn">
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </section>
+
+    <div class="show-location">
+
+        <div class="show-location-content">
+            <h1 class="show-location-header">
+                Our Location
+            </h1>
+            <h4 class="show-location-text">
+                Want to meet in person? Here's where you can find us. Feel free to reach out and schedule a visit!
+            </h4>
+            <button class="show-location-button">View on Map</button>
+        </div>
+        <spline-viewer url="https://prod.spline.design/VlKQqHVhF3Qqka3v/scene.splinecode"></spline-viewer>
+
+    </div>
 
 
 
 
-        <section class="contact-form">
-            <div class="contact-form-container">
-                <h2 class="contact-form-title">Get In Touch</h2>
-                <p class="contact-form-subtitle">
-                    Have a question or project in mind? Send me a message and I’ll get back to you soon!
-                </p>
-                <form class="form">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required />
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required />
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="form-button">Send Message</button>
-                </form>
-            </div>
-        </section>
+    <section class="contact-form">
+        <div class="contact-form-container">
+            <h2 class="contact-form-title">Get In Touch</h2>
+            <p class="contact-form-subtitle">
+                Have a question or project in mind? Send me a message and I’ll get back to you soon!
+            </p>
+            <form class="form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="form-button">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-    </body>
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.57/build/spline-viewer.js"></script>
+</body>
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.57/build/spline-viewer.js"></script>
 
 </html>
