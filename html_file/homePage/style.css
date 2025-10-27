@@ -1337,18 +1337,67 @@ spline-viewer {
 }
 
 
+/* Layout: 70/30 split with animation on the right */
+.resume {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
 
+.resume > .resumedownload {
+    flex: 0 0 70%;
+    width: 70%;
+}
 
-/* From Uiverse.io by abhshkpandey */ 
+.resumeAnimaion {
+    flex: 0 0 30%;
+    width: 30%;
+    min-height: 340px;
+    position: relative;
+    overflow: hidden;
+    
+    border-radius: 24px;
+    
+    display: grid;
+    place-items: center;
+}
+
+/* From Uiverse.io by abhshkpandey */
 .socket {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  margin-left: 380px;
-  top: 50%;
-  margin-top: -120px;
-     
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .resume {
+        flex-direction: column;
+    }
+    .resume > .resumedownload,
+    .resumeAnimaion {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    .resumeAnimaion {
+        min-height: 280px;
+    }
+    .socket {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 560px) {
+    .resumeAnimaion {
+        min-height: 220px;
+        border-radius: 20px;
+    }
+    .socket {
+        width: 160px;
+        height: 160px;
+    }
 }
 
 .hex-brick {
