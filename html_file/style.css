@@ -41,7 +41,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px;
+
     margin: 40px auto;
     gap: 40px;
     border: #0d5e4a 1px solid;
