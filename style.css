@@ -499,19 +499,90 @@ ul {
 
 .hero-floating-badge {
     position: absolute;
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.12) 0%,
+        rgba(255, 255, 255, 0.05) 40%,
+        rgba(108, 99, 255, 0.08) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-top-color: rgba(255, 255, 255, 0.3);
+    border-left-color: rgba(255, 255, 255, 0.22);
     padding: 10px 18px;
-    border-radius: var(--radius-lg);
+    border-radius: 16px;
     font-size: 0.85rem;
     font-weight: 600;
     display: flex;
     align-items: center;
     gap: 8px;
-    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(18px) saturate(1.6);
+    -webkit-backdrop-filter: blur(18px) saturate(1.6);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        inset 0 1px 1px rgba(255, 255, 255, 0.15),
+        inset 0 -1px 2px rgba(0, 0, 0, 0.1),
+        0 0 0 0.5px rgba(255, 255, 255, 0.05);
     z-index: 2;
-    animation: float 3s ease-in-out infinite;
+    animation: floatGlass 4s ease-in-out infinite;
     white-space: nowrap;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.hero-floating-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.12) 0%,
+        transparent 100%
+    );
+    border-radius: 16px 16px 50% 50%;
+    pointer-events: none;
+}
+
+.hero-floating-badge::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 15%;
+    width: 40%;
+    height: 8px;
+    background: radial-gradient(
+        ellipse,
+        rgba(255, 255, 255, 0.25) 0%,
+        transparent 70%
+    );
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-floating-badge:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0.08) 40%,
+        rgba(108, 99, 255, 0.15) 100%
+    );
+    border-color: rgba(255, 255, 255, 0.28);
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.3),
+        inset 0 1px 2px rgba(255, 255, 255, 0.2),
+        inset 0 -1px 2px rgba(0, 0, 0, 0.1),
+        0 0 20px rgba(108, 99, 255, 0.12);
+    transform: translateY(-6px) rotateX(5deg) rotateY(-3deg) scale(1.05);
+}
+
+.hero-floating-badge span {
+    font-size: 1.1rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .badge-1 {
@@ -523,13 +594,28 @@ ul {
 .badge-2 {
     bottom: 20%;
     left: -10%;
-    animation-delay: 1s;
+    animation-delay: 1.3s;
 }
 
 .badge-3 {
     bottom: 5%;
     right: 0%;
-    animation-delay: 2s;
+    animation-delay: 2.6s;
+}
+
+@keyframes floatGlass {
+    0%, 100% {
+        transform: translateY(0) rotateX(0deg) rotateY(0deg);
+    }
+    25% {
+        transform: translateY(-8px) rotateX(2deg) rotateY(-2deg);
+    }
+    50% {
+        transform: translateY(-12px) rotateX(-1deg) rotateY(3deg);
+    }
+    75% {
+        transform: translateY(-5px) rotateX(1deg) rotateY(-1deg);
+    }
 }
 
 @keyframes float {
