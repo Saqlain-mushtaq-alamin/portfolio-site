@@ -1242,6 +1242,55 @@ ul {
     opacity: 0.8;
 }
 
+/* Per-project gradient backgrounds */
+.project-gradient-finura {
+    background: linear-gradient(135deg, #1a1040 0%, #2d1b69 50%, #0f3460 100%);
+}
+
+.project-gradient-finanalyzer {
+    background: linear-gradient(135deg, #0d2137 0%, #0a4a6e 50%, #0d3b55 100%);
+}
+
+.project-gradient-wifi {
+    background: linear-gradient(135deg, #0d2b1a 0%, #0f4c2a 50%, #1a3a1a 100%);
+}
+
+.project-gradient-snake {
+    background: linear-gradient(135deg, #1a0d2e 0%, #3b1a6e 50%, #1a0a40 100%);
+}
+
+.project-gradient-morse {
+    background: linear-gradient(135deg, #1a1200 0%, #4a3200 50%, #2a1a00 100%);
+}
+
+.project-gradient-compiler {
+    background: linear-gradient(135deg, #0a1a2e 0%, #1a3a5c 50%, #0d2442 100%);
+}
+
+/* Featured card accent */
+.featured-card {
+    border-color: rgba(108, 99, 255, 0.35) !important;
+    box-shadow: 0 0 0 1px rgba(108, 99, 255, 0.2), var(--shadow-md);
+}
+
+.project-badge-featured {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--gradient-primary);
+    color: white;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 50px;
+    z-index: 2;
+    box-shadow: 0 2px 10px rgba(108, 99, 255, 0.4);
+}
+
+
+
 .project-overlay {
     position: absolute;
     inset: 0;

@@ -417,21 +417,25 @@
 
             <div class="project-filters" data-aos="fade-up">
                 <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="flutter">Flutter</button>
                 <button class="filter-btn" data-filter="python">Python</button>
                 <button class="filter-btn" data-filter="java">Java</button>
-                <button class="filter-btn" data-filter="flutter">Flutter</button>
-                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                <button class="filter-btn" data-filter="cpp">C++</button>
             </div>
 
             <div class="projects-grid">
-                <article class="project-card" data-category="python" data-aos="fade-up" data-aos-delay="0"
-                    data-title="BudgetBot" data-emoji="🐍"
-                    data-desc="BudgetBot is an AI-powered personal finance tracker designed to help users manage their money smarter. It uses machine learning algorithms to analyze spending patterns, categorize transactions automatically, and provide personalized budget recommendations. The system learns from your habits over time to deliver increasingly accurate financial insights."
-                    data-features="Smart expense categorization using ML|Real-time budget tracking dashboard|Personalized saving recommendations|Monthly & weekly spending reports|REST API with JWT authentication|Interactive charts and analytics"
-                    data-tech="Python,FastAPI,Machine Learning,PostgreSQL,Chart.js"
+
+                <!-- ── Finura ── -->
+                <article class="project-card featured-card" data-category="flutter" data-aos="fade-up"
+                    data-aos-delay="0" data-title="Finura — AI Finance Assistant" data-emoji="💰"
+                    data-desc="An AI-powered personal finance assistant built with Flutter (frontend) and FastAPI (backend). Finura goes beyond expense tracking — it understands your mood, habits, and saving goals to help you make smarter financial decisions in real time."
+                    data-features="Secure login with password &amp; PIN 🔑|Offline SQLite + online PostgreSQL sync 🌍|AI auto-categorization (Naive Bayes &amp; Logistic Regression)|LSTM model for spending &amp; mood prediction 📈|FCM smart notifications to prevent overspending 💸|Dashboards, saving planner, chatbot &amp; history 🤖"
+                    data-tech="Flutter,FastAPI,SQLite,PostgreSQL,LSTM,Naive Bayes,FCM"
                     data-github="https://github.com/Saqlain-mushtaq-alamin" data-video="">
                     <div class="project-image">
-                        <div class="project-placeholder">🐍</div>
+                        <div class="project-placeholder project-gradient-finura">💰</div>
+                        <div class="project-badge-featured">Featured</div>
                         <div class="project-overlay">
                             <button class="project-link project-detail-btn" aria-label="View project details">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -450,23 +454,24 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>BudgetBot</h3>
-                        <p>AI-powered personal finance tracker with smart spending insights and budget recommendations.
-                        </p>
+                        <h3>Finura</h3>
+                        <p>AI-powered finance assistant that predicts spending, tracks mood, and sends smart FCM alerts
+                            to help you save.</p>
                         <div class="project-tags">
-                            <span>Python</span><span>FastAPI</span><span>ML</span>
+                            <span>Flutter</span><span>FastAPI</span><span>ML</span><span>LSTM</span><span>PostgreSQL</span>
                         </div>
                     </div>
                 </article>
 
+                <!-- ── Finanalyzer ── -->
                 <article class="project-card" data-category="python" data-aos="fade-up" data-aos-delay="100"
                     data-title="Finanalyzer" data-emoji="📊"
-                    data-desc="Finanalyzer is a smart accounting assistant built to simplify financial management. It helps users track daily expenses, generate detailed reports, and gain deep insights through data analytics. With an intuitive interface and powerful backend, it turns complex financial data into actionable information."
-                    data-features="Automated expense tracking & categorization|Visual financial reports with graphs|Income vs expense comparison|Export reports as PDF|Multi-user support with role-based access|RESTful API architecture"
-                    data-tech="Python,FastAPI,Analytics,PostgreSQL,Pandas"
-                    data-github="https://github.com/Saqlain-mushtaq-alamin" data-video="">
+                    data-desc="A simple yet powerful accounting tool that automates and visualizes key financial tasks. Perfect for students, small businesses, or anyone learning the accounting process. Performs journal entries, general ledger management, trial balance generation, and tabular math-based analysis."
+                    data-features="Journal Entry Creation 📘|General Ledger Management 📒|Trial Balance Calculation 📈|Tabular Math-Based Analysis 🧮|Clean CLI interface|Open source &amp; extensible"
+                    data-tech="Python,Accounting,Data Analysis,CLI"
+                    data-github="https://github.com/Saqlain-mushtaq-alamin/Finanalyzer-" data-video="">
                     <div class="project-image">
-                        <div class="project-placeholder">📊</div>
+                        <div class="project-placeholder project-gradient-finanalyzer">📊</div>
                         <div class="project-overlay">
                             <button class="project-link project-detail-btn" aria-label="View project details">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -475,8 +480,8 @@
                                         d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
                                 </svg>
                             </button>
-                            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="project-link"
-                                aria-label="View code">
+                            <a href="https://github.com/Saqlain-mushtaq-alamin/Finanalyzer-" target="_blank"
+                                class="project-link" aria-label="View code">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
                                     <path
                                         d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
@@ -486,22 +491,59 @@
                     </div>
                     <div class="project-info">
                         <h3>Finanalyzer</h3>
-                        <p>Smart accounting assistant for tracking expenses, generating reports, and financial
-                            analytics.</p>
+                        <p>Accounting automation tool covering journal entries, general ledger, and trial balance
+                            generation.</p>
                         <div class="project-tags">
-                            <span>Python</span><span>Analytics</span><span>FastAPI</span>
+                            <span>Python</span><span>Accounting</span><span>Data Analysis</span>
                         </div>
                     </div>
                 </article>
 
-                <article class="project-card" data-category="java" data-aos="fade-up" data-aos-delay="200"
-                    data-title="Snake Game" data-emoji="🎮"
-                    data-desc="A classic Snake Game reimagined with Java, featuring smooth rendering, progressive difficulty scaling, and clean object-oriented architecture. The game engine handles collision detection, score tracking, and real-time rendering with optimized frame rates. A fun project that demonstrates core game development principles."
-                    data-features="Smooth 60fps game rendering|Progressive difficulty levels|High score persistence|Clean OOP architecture with design patterns|Collision detection system|Responsive keyboard controls"
+                <!-- ── WiFi Strength Scanner ── -->
+                <article class="project-card" data-category="python" data-aos="fade-up" data-aos-delay="200"
+                    data-title="WiFi Strength Scanner" data-emoji="📡"
+                    data-desc="A comprehensive desktop tool for scanning and visualizing WiFi signal strength with heatmap generation. Upload a floor blueprint, mark scan points, and the IDW interpolation algorithm generates a detailed signal heatmap overlaid on your blueprint. Supports project save/load and produces a standalone .exe installer."
+                    data-features="WiFi signal scanning via Netsh parser|IDW interpolation heatmap generation|Blueprint upload &amp; heatmap overlay|Interactive point marking on floor plans|Project management (JSON/SQLite)|Standalone .exe installer build"
+                    data-tech="Python,PyQt5,SQLite,IDW Algorithm,Heatmap,PyInstaller"
+                    data-github="https://github.com/Saqlain-mushtaq-alamin" data-video="">
+                    <div class="project-image">
+                        <div class="project-placeholder project-gradient-wifi">📡</div>
+                        <div class="project-overlay">
+                            <button class="project-link project-detail-btn" aria-label="View project details">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                                </svg>
+                            </button>
+                            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="project-link"
+                                aria-label="View code">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>WiFi Strength Scanner</h3>
+                        <p>Desktop tool that visualizes WiFi signal coverage as a heatmap overlaid on a floor blueprint
+                            using IDW interpolation.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>PyQt5</span><span>Heatmap</span><span>SQLite</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ── Snake Game ── -->
+                <article class="project-card" data-category="java" data-aos="fade-up" data-aos-delay="300"
+                    data-title="Graphical Snake Game" data-emoji="🎮"
+                    data-desc="A classic Snake Game reimagined with a graphical multi-layer style in Java, making it genuinely enjoyable to play. Built as a Java lab project, it demonstrates core OOP principles with smooth rendering, progressive difficulty, and a polished visual experience."
+                    data-features="Multi-layer graphical design|Smooth game rendering engine|Progressive difficulty scaling|Responsive keyboard controls|Collision detection system|Score tracking &amp; high score board"
                     data-tech="Java,Swing,OOP,Game Development" data-github="https://github.com/Saqlain-mushtaq-alamin"
                     data-video="">
                     <div class="project-image">
-                        <div class="project-placeholder">🎮</div>
+                        <div class="project-placeholder project-gradient-snake">🎮</div>
                         <div class="project-overlay">
                             <button class="project-link project-detail-btn" aria-label="View project details">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -521,21 +563,23 @@
                     </div>
                     <div class="project-info">
                         <h3>Snake Game</h3>
-                        <p>Classic snake game built with Java featuring smooth animations and increasing difficulty.</p>
+                        <p>Graphical multi-layer Snake Game in Java with smooth animations and progressive difficulty.
+                            Java lab project.</p>
                         <div class="project-tags">
-                            <span>Java</span><span>Game Dev</span><span>OOP</span>
+                            <span>Java</span><span>Swing</span><span>OOP</span><span>Game Dev</span>
                         </div>
                     </div>
                 </article>
 
-                <article class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300"
-                    data-title="Portfolio Website" data-emoji="🌐"
-                    data-desc="This personal portfolio website showcases my skills, projects, and services with a modern dark-themed design. Built from scratch with pure HTML, CSS, and JavaScript — no frameworks. Features smooth scroll animations, a typewriter effect, glassmorphism UI elements, responsive layout, and an interactive project showcase."
-                    data-features="Fully responsive single-page design|Smooth AOS scroll animations|Typewriter text effect|Glassmorphic floating badges|Project filtering system|Contact form with validation"
-                    data-tech="HTML5,CSS3,JavaScript,AOS,GitHub Pages"
+                <!-- ── Morse Code Interpreter ── -->
+                <article class="project-card" data-category="hardware" data-aos="fade-up" data-aos-delay="400"
+                    data-title="Morse Code Interpreter" data-emoji="📟"
+                    data-desc="A bidirectional wireless Morse Code communication system using two Arduino Uno boards. Users input Morse code via tactile buttons, the system translates it to English, and transmits it wirelessly via the NRF24L01+ PA LNA module. The translated message displays in real time on a 16x2 LCD with I2C support. Each unit acts as both sender and receiver."
+                    data-features="Bidirectional wireless communication|Morse code to English translation|NRF24L01+ PA LNA transceiver|16x2 LCD with I2C real-time display|4-button control: Dot, Dash, Action, Transmit|Hold Action to delete · Tap Action to space"
+                    data-tech="Arduino Uno,NRF24L01+,LCD I2C,RF24,C++,Embedded"
                     data-github="https://github.com/Saqlain-mushtaq-alamin" data-video="">
                     <div class="project-image">
-                        <div class="project-placeholder">🌐</div>
+                        <div class="project-placeholder project-gradient-morse">📟</div>
                         <div class="project-overlay">
                             <button class="project-link project-detail-btn" aria-label="View project details">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -554,13 +598,51 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>This personal portfolio website with modern design, animations, and responsive layout.</p>
+                        <h3>Morse Code Interpreter</h3>
+                        <p>Bidirectional wireless Morse-to-English communication system using Arduino + NRF24L01+ with
+                            real-time LCD output.</p>
                         <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            <span>Arduino</span><span>NRF24L01+</span><span>Embedded</span><span>C++</span>
                         </div>
                     </div>
                 </article>
+
+                <!-- ── MINI-Compiler ── -->
+                <article class="project-card" data-category="cpp" data-aos="fade-up" data-aos-delay="500"
+                    data-title="MINI-Compiler" data-emoji="⚙️"
+                    data-desc="A full compiler for the MINI programming language — a modern, type-safe, beginner-friendly language. MINI stands for Minimalistic Instruction Interface. Supports dynamic lists (C++ vector-like), control flow, string operations, and automatic memory management. Built as Compiler Design coursework."
+                    data-features="Strong type system: number, string, list&lt;TYPE&gt;|Dynamic lists with automatic resizing|Control flow: when/otherwise, repeat, begone|String concatenation, escape sequences &amp; type conversion|Automatic memory cleanup — no manual management|Clean, readable syntax for beginners"
+                    data-tech="C++,Compiler Design,Lexer,Parser,Type System,MINI Language"
+                    data-github="https://github.com/Saqlain-mushtaq-alamin" data-video="">
+                    <div class="project-image">
+                        <div class="project-placeholder project-gradient-compiler">⚙️</div>
+                        <div class="project-overlay">
+                            <button class="project-link project-detail-btn" aria-label="View project details">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                                </svg>
+                            </button>
+                            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="project-link"
+                                aria-label="View code">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>MINI-Compiler</h3>
+                        <p>A full compiler for the MINI language — type-safe, memory-safe, with dynamic lists and clean
+                            syntax. Compiler Design coursework.</p>
+                        <div class="project-tags">
+                            <span>C++</span><span>Compiler Design</span><span>Type System</span>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </div>
     </section>
