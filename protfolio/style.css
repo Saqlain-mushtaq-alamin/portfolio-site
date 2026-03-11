@@ -1528,6 +1528,20 @@ ul {
     margin: 0 auto;
     max-width: 100%;
     padding: 10px 24px;
+    background-image: url('image/photo3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-cta-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(10, 10, 15, 0.72) 0%, rgba(30, 20, 80, 0.68) 100%);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    z-index: 0;
 }
 
 .footer-cta-content {
@@ -1551,8 +1565,9 @@ ul {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(108, 99, 255, 0.12), transparent 70%);
+    background: radial-gradient(circle, rgba(108, 99, 255, 0.18), transparent 70%);
     pointer-events: none;
+    z-index: 1;
 }
 
 .footer-cta-content h2 {
