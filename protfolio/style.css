@@ -241,17 +241,7 @@ ul {
     flex-shrink: 0;
 }
 
-.logo-icon {
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background: var(--gradient-primary);
-    border-radius: var(--radius-sm);
-    font-style: normal;
-}
+ 
 
 .logo-text {
     display: flex;
@@ -302,25 +292,7 @@ ul {
     flex-shrink: 0;
 }
 
-.nav-status {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    font-family: var(--font-mono);
-    letter-spacing: 0.3px;
-}
-
-.nav-status-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #10b981;
-    box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
-    animation: statusPulse 2.5s ease-in-out infinite;
-}
-
+ 
 @keyframes statusPulse {
     0%, 100% { opacity: 1; box-shadow: 0 0 8px rgba(16, 185, 129, 0.6); }
     50% { opacity: 0.6; box-shadow: 0 0 4px rgba(16, 185, 129, 0.3); }
