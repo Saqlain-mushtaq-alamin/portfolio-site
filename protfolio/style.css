@@ -241,7 +241,101 @@ ul {
     flex-shrink: 0;
 }
 
- 
+.logo-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.lightning-bolt {
+    animation: lightningFire 2.4s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.bolt-body {
+    fill: #facc15;
+}
+
+.bolt-spark {
+    stroke: #fde68a;
+    opacity: 0;
+}
+
+.spark-1 {
+    animation: sparkFlash 2.4s ease-in-out infinite 0.08s;
+}
+
+.spark-2 {
+    animation: sparkFlash 2.4s ease-in-out infinite 0.14s;
+}
+
+.spark-3 {
+    animation: sparkFlash 2.4s ease-in-out infinite 0.06s;
+}
+
+.spark-4 {
+    animation: sparkFlash 2.4s ease-in-out infinite 0.12s;
+}
+
+@keyframes lightningFire {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 3px #facc15) drop-shadow(0 0 7px #f59e0b);
+        transform: scale(1);
+    }
+
+    8% {
+        filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #facc15) drop-shadow(0 0 36px #f59e0b);
+        transform: scale(1.12) translateY(-1px);
+    }
+
+    10% {
+        filter: drop-shadow(0 0 2px #facc15);
+        transform: scale(0.96);
+    }
+
+    30% {
+        filter: drop-shadow(0 0 12px #fff) drop-shadow(0 0 24px #facc15) drop-shadow(0 0 40px #f59e0b);
+        transform: scale(1.14) translateY(-1px);
+    }
+
+    32% {
+        filter: drop-shadow(0 0 2px #facc15);
+        transform: scale(0.96);
+    }
+
+    50%,
+    100% {
+        filter: drop-shadow(0 0 3px #facc15) drop-shadow(0 0 7px #f59e0b);
+        transform: scale(1);
+    }
+}
+
+@keyframes sparkFlash {
+
+    0%,
+    6%,
+    12%,
+    28%,
+    34%,
+    100% {
+        opacity: 0;
+    }
+
+    8%,
+    10% {
+        opacity: 1;
+    }
+
+    30%,
+    32% {
+        opacity: 1;
+    }
+}
+
+
 
 .logo-text {
     display: flex;
@@ -292,10 +386,19 @@ ul {
     flex-shrink: 0;
 }
 
- 
+
 @keyframes statusPulse {
-    0%, 100% { opacity: 1; box-shadow: 0 0 8px rgba(16, 185, 129, 0.6); }
-    50% { opacity: 0.6; box-shadow: 0 0 4px rgba(16, 185, 129, 0.3); }
+
+    0%,
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+    }
+
+    50% {
+        opacity: 0.6;
+        box-shadow: 0 0 4px rgba(16, 185, 129, 0.3);
+    }
 }
 
 .nav-cta {
@@ -461,7 +564,9 @@ ul {
 }
 
 @keyframes blink {
-    50% { opacity: 0; }
+    50% {
+        opacity: 0;
+    }
 }
 
 .hero-description {
@@ -538,7 +643,9 @@ ul {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .hero-photo {
@@ -554,12 +661,10 @@ ul {
 
 .hero-floating-badge {
     position: absolute;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.12) 0%,
-        rgba(255, 255, 255, 0.05) 40%,
-        rgba(108, 99, 255, 0.08) 100%
-    );
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.12) 0%,
+            rgba(255, 255, 255, 0.05) 40%,
+            rgba(108, 99, 255, 0.08) 100%);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-top-color: rgba(255, 255, 255, 0.3);
     border-left-color: rgba(255, 255, 255, 0.22);
@@ -594,11 +699,9 @@ ul {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.12) 0%,
-        transparent 100%
-    );
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.12) 0%,
+            transparent 100%);
     border-radius: 16px 16px 50% 50%;
     pointer-events: none;
 }
@@ -610,22 +713,18 @@ ul {
     left: 15%;
     width: 40%;
     height: 8px;
-    background: radial-gradient(
-        ellipse,
-        rgba(255, 255, 255, 0.25) 0%,
-        transparent 70%
-    );
+    background: radial-gradient(ellipse,
+            rgba(255, 255, 255, 0.25) 0%,
+            transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
 
 .hero-floating-badge:hover {
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.18) 0%,
-        rgba(255, 255, 255, 0.08) 40%,
-        rgba(108, 99, 255, 0.15) 100%
-    );
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.18) 0%,
+            rgba(255, 255, 255, 0.08) 40%,
+            rgba(108, 99, 255, 0.15) 100%);
     border-color: rgba(255, 255, 255, 0.28);
     box-shadow:
         0 12px 40px rgba(0, 0, 0, 0.3),
@@ -659,23 +758,35 @@ ul {
 }
 
 @keyframes floatGlass {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0) rotateX(0deg) rotateY(0deg);
     }
+
     25% {
         transform: translateY(-8px) rotateX(2deg) rotateY(-2deg);
     }
+
     50% {
         transform: translateY(-12px) rotateX(-1deg) rotateY(3deg);
     }
+
     75% {
         transform: translateY(-5px) rotateX(1deg) rotateY(-1deg);
     }
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 /* Scroll Indicator */
@@ -715,8 +826,15 @@ ul {
 }
 
 @keyframes scrollAnim {
-    0% { opacity: 1; top: 6px; }
-    100% { opacity: 0; top: 22px; }
+    0% {
+        opacity: 1;
+        top: 6px;
+    }
+
+    100% {
+        opacity: 0;
+        top: 22px;
+    }
 }
 
 /* ============ ABOUT ============ */
@@ -1204,6 +1322,7 @@ ul {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1358,8 +1477,8 @@ ul {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    max-width: var(--container-width);
-    padding: 0 24px;
+    max-width: 100%;
+    padding: 10px 24px;
 }
 
 .footer-cta-content {
@@ -1368,7 +1487,8 @@ ul {
     text-align: center;
     padding: 64px 40px;
     border-radius: var(--radius-xl);
-    border: 1px solid rgba(108, 99, 255, 0.15);
+    border-top: 1px solid rgba(108, 99, 255, 0.15);
+    border-bottom: 1px solid rgba(108, 99, 255, 0.1);
     background: linear-gradient(135deg, rgba(108, 99, 255, 0.06), rgba(59, 130, 246, 0.04));
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -1527,8 +1647,15 @@ ul {
 }
 
 @keyframes heartPulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
 }
 
 .footer-tech {
@@ -1597,6 +1724,7 @@ ul {
 }
 
 @media (max-width: 768px) {
+
     /* Navbar */
     .nav-pill {
         display: none;
@@ -1915,7 +2043,7 @@ ul {
     margin-bottom: 14px;
 }
 
-.modal-section > p {
+.modal-section>p {
     font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.8;
