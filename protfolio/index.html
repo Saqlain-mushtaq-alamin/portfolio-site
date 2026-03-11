@@ -222,7 +222,7 @@
 
                     <div class="about-buttons">
                         <a href="#contact" class="btn btn-primary">Let's Connect</a>
-                        <a href="#" class="btn btn-outline" download>Download CV</a>
+                        <a href="cv/MD.AL_AMIN.pdf" class="btn btn-outline" download="MD.AL_AMIN_CV.pdf">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -427,8 +427,8 @@
             <div class="projects-grid">
 
                 <!-- ── Finura ── -->
-                <article class="project-card featured-card" data-category="flutter" data-aos="fade-up"
-                    data-aos-delay="0" data-title="Finura — AI Finance Assistant" data-emoji="💰"
+                <article class="project-card featured-card" data-category="flutter " data-category="python"
+                    data-aos="fade-up" data-aos-delay="0" data-title="Finura — AI Finance Assistant" data-emoji="💰"
                     data-desc="An AI-powered personal finance assistant built with Flutter (frontend) and FastAPI (backend). Finura goes beyond expense tracking — it understands your mood, habits, and saving goals to help you make smarter financial decisions in real time."
                     data-features="Secure login with password &amp; PIN 🔑|Offline SQLite + online PostgreSQL sync 🌍|AI auto-categorization (Naive Bayes &amp; Logistic Regression)|LSTM model for spending &amp; mood prediction 📈|FCM smart notifications to prevent overspending 💸|Dashboards, saving planner, chatbot &amp; history 🤖"
                     data-tech="Flutter,FastAPI,SQLite,PostgreSQL,LSTM,Naive Bayes,FCM"
@@ -464,7 +464,7 @@
                 </article>
 
                 <!-- ── Finanalyzer ── -->
-                <article class="project-card" data-category="python" data-aos="fade-up" data-aos-delay="100"
+                <article class="project-card" data-category="java" data-aos="fade-up" data-aos-delay="100"
                     data-title="Finanalyzer" data-emoji="📊"
                     data-desc="A simple yet powerful accounting tool that automates and visualizes key financial tasks. Perfect for students, small businesses, or anyone learning the accounting process. Performs journal entries, general ledger management, trial balance generation, and tabular math-based analysis."
                     data-features="Journal Entry Creation 📘|General Ledger Management 📒|Trial Balance Calculation 📈|Tabular Math-Based Analysis 🧮|Clean CLI interface|Open source &amp; extensible"
@@ -577,7 +577,8 @@
                     data-desc="A bidirectional wireless Morse Code communication system using two Arduino Uno boards. Users input Morse code via tactile buttons, the system translates it to English, and transmits it wirelessly via the NRF24L01+ PA LNA module. The translated message displays in real time on a 16x2 LCD with I2C support. Each unit acts as both sender and receiver."
                     data-features="Bidirectional wireless communication|Morse code to English translation|NRF24L01+ PA LNA transceiver|16x2 LCD with I2C real-time display|4-button control: Dot, Dash, Action, Transmit|Hold Action to delete · Tap Action to space"
                     data-tech="Arduino Uno,NRF24L01+,LCD I2C,RF24,C++,Embedded"
-                    data-github="https://github.com/Saqlain-mushtaq-alamin" data-video="https://www.youtube.com/watch?v=zYx_dkuq2mQ">
+                    data-github="https://github.com/Saqlain-mushtaq-alamin"
+                    data-video="https://www.youtube.com/watch?v=zYx_dkuq2mQ">
                     <div class="project-image">
                         <div class="project-placeholder project-gradient-morse">📟</div>
                         <div class="project-overlay">
@@ -663,7 +664,7 @@
                         <div class="contact-icon">📧</div>
                         <div>
                             <h4>Email</h4>
-                            <p>alamin@example.com</p>
+                            <p>alamin86911@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-info-card">
@@ -724,10 +725,11 @@
                         <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
                             required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">
-                        <span>Send Message</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
+                    <div class="form-status" id="formStatus"></div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span id="submitLabel">Send Message</span>
+                        <svg id="submitIcon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
                             <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
                         </svg>
                     </button>
@@ -860,8 +862,9 @@
                                     class="footer-link-arrow">→</span> GitHub</a></li>
                         <li><a href="https://linkedin.com" target="_blank"><span class="footer-link-arrow">→</span>
                                 LinkedIn</a></li>
-                        <li><a href="#"><span class="footer-link-arrow">→</span> Resume</a></li>
-                        <li><a href="mailto:alamin@example.com"><span class="footer-link-arrow">→</span> Email Me</a>
+                        <li><a href="cv/MD.AL_AMIN.pdf" target="_blank"><span class="footer-link-arrow">→</span>
+                                Resume</a></li>
+                        <li><a href="mailto:alamin86911@gmail.com"><span class="footer-link-arrow">→</span> Email Me</a>
                         </li>
                     </ul>
                 </div>
@@ -993,18 +996,73 @@
             });
         });
 
-        // ============ CONTACT FORM ============
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
+        // ============ CONTACT FORM (Formspree) ============
+    
+        const FORMSPREE_ID = 'https://formspree.io/f/mojkdlbr';
+
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
             e.preventDefault();
-            const btn = this.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<span>Message Sent! ✓</span>';
-            btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-            setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.style.background = '';
-                this.reset();
-            }, 3000);
+            const btn = document.getElementById('submitBtn');
+            const label = document.getElementById('submitLabel');
+            const icon = document.getElementById('submitIcon');
+            const status = document.getElementById('formStatus');
+            const form = this;
+
+            // Sending state
+            btn.disabled = true;
+            label.textContent = 'Sending...';
+            icon.style.display = 'none';
+            status.textContent = '';
+            status.className = 'form-status';
+
+            const data = {
+                name: form.name.value,
+                email: form.email.value,
+                subject: form.subject.value,
+                message: form.message.value
+            };
+
+            if (FORMSPREE_ID === 'YOUR_FORM_ID') {
+                // Fallback: open mail client if Formspree not configured yet
+                const mailto = `mailto:alamin86911@gmail.com?subject=${encodeURIComponent(data.subject || 'Portfolio Contact')}&body=${encodeURIComponent('Name: ' + data.name + '\nEmail: ' + data.email + '\n\n' + data.message)}`;
+                window.location.href = mailto;
+                btn.disabled = false;
+                label.textContent = 'Send Message';
+                icon.style.display = '';
+                return;
+            }
+
+            try {
+                const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (res.ok) {
+                    label.textContent = 'Message Sent ✓';
+                    btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+                    status.textContent = '✅ Thanks! I\'ll get back to you soon.';
+                    status.className = 'form-status form-status--success';
+                    form.reset();
+                    setTimeout(() => {
+                        label.textContent = 'Send Message';
+                        btn.style.background = '';
+                        btn.disabled = false;
+                        icon.style.display = '';
+                        status.textContent = '';
+                        status.className = 'form-status';
+                    }, 4000);
+                } else {
+                    throw new Error('Server error');
+                }
+            } catch {
+                label.textContent = 'Send Message';
+                icon.style.display = '';
+                btn.disabled = false;
+                status.textContent = '❌ Something went wrong. Please email me directly at alamin86911@gmail.com';
+                status.className = 'form-status form-status--error';
+            }
         });
 
         // ============ BACK TO TOP ============

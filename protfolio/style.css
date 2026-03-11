@@ -1515,7 +1515,34 @@ ul {
     min-height: 120px;
 }
 
-/* ============ FOOTER ============ */
+.form-status {
+    font-size: 0.9rem;
+    font-weight: 500;
+    min-height: 24px;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.form-status--success {
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.08);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    padding: 10px 14px;
+}
+
+.form-status--error {
+    color: #f87171;
+    background: rgba(248, 113, 113, 0.08);
+    border: 1px solid rgba(248, 113, 113, 0.2);
+    padding: 10px 14px;
+}
+
+#submitBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+
 .footer {
     background: var(--bg-primary);
     position: relative;
