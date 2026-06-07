@@ -1,1163 +1,1290 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Md Al Amin - Full Stack Developer & CS Student. Portfolio showcasing projects, skills, and services.">
-    <meta name="keywords" content="developer, portfolio, web development, full stack, python, java, flutter">
-    <meta name="author" content="Md Al Amin">
-    <title>Md Al Amin | Developer Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Md Al Amin — Junior Full Stack Developer & AI Enthusiast. Building intelligent systems, scalable apps, and human-centered AI.">
+  <meta name="keywords" content="full stack developer, AI engineer, Flutter, FastAPI, Python, portfolio, Bangladesh">
+  <meta name="author" content="Md Al Amin">
+  <title>Md Al Amin · Full Stack & AI Developer</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
-        rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Devicons for skill icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- ============ NAVBAR ============ -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-icon">
-                    <svg class="lightning-bolt" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path class="bolt-body"
-                            d="M13 2L4.09 12.96A1 1 0 005 14.5h5.5L10 22l8.91-10.96A1 1 0 0018 10h-5.5L13 2z" />
-                        <line class="bolt-spark spark-1" x1="18" y1="4" x2="21" y2="2" stroke-width="1.5"
-                            stroke-linecap="round" />
-                        <line class="bolt-spark spark-2" x1="20" y1="8" x2="23" y2="7" stroke-width="1.5"
-                            stroke-linecap="round" />
-                        <line class="bolt-spark spark-3" x1="4" y1="14" x2="1" y2="16" stroke-width="1.5"
-                            stroke-linecap="round" />
-                        <line class="bolt-spark spark-4" x1="6" y1="18" x2="3" y2="20" stroke-width="1.5"
-                            stroke-linecap="round" />
-                    </svg>
-                </span>
-                <span class="logo-text"><span class="logo-bracket">&lt;</span>Al Amin<span class="logo-bracket">
-                        /&gt;</span></span>
-            </a>
-            <div class="nav-pill">
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#hero" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-            <div class="nav-right">
 
-                <a href="#contact" class="nav-cta">
-                    <span>Hire Me</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2.5">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                </a>
-            </div>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+<!-- ═══════════════════════════════════
+     NAVBAR — floating pill with magnetic hover
+════════════════════════════════════ -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-wrap">
+    <a href="#hero" class="nav-brand">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <rect width="28" height="28" rx="8" fill="var(--accent)"/>
+        <path d="M8 20L14 8L20 20" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 16.5H18" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <span>Al Amin</span>
+    </a>
 
-    <!-- ============ HERO SECTION ============ -->
-    <section class="hero" id="hero">
-        <div class="hero-bg-grid"></div>
-        <div class="hero-glow hero-glow-1"></div>
-        <div class="hero-glow hero-glow-2"></div>
-
-        <div class="hero-container">
-            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-                <p class="hero-greeting">👋 Welcome to my portfolio</p>
-                <h1 class="hero-title">
-                    Hi, I'm <span class="hero-name">Md Al Amin</span>
-                </h1>
-                <div class="hero-typewriter">
-                    <span class="typewriter-text" id="typewriter"></span>
-                    <span class="typewriter-cursor">|</span>
-                </div>
-                <p class="hero-description">
-                    A passionate Computer Science student at DIU, skilled in full-stack development,
-                    backend engineering, and AI/ML. Building meaningful digital experiences that make an impact.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <span>View My Work</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <span>Get In Touch</span>
-                    </a>
-                </div>
-                <div class="hero-social">
-                    <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" aria-label="GitHub"
-                        class="social-link">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-link">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
-                    </a>
-                    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-link">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-                            <path
-                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                <div class="hero-image-wrapper">
-                    <div class="hero-image-ring"></div>
-                    <div class="hero-image-ring ring-2"></div>
-                    <img src="image/profile.png" alt="Md Al Amin - Developer" class="hero-photo">
-                </div>
-                <div class="hero-floating-badge badge-1" data-aos="zoom-in" data-aos-delay="600">
-                    <span>🚀</span> Full Stack
-                </div>
-                <div class="hero-floating-badge badge-2" data-aos="zoom-in" data-aos-delay="800">
-                    <span>🤖</span> AI/ML
-                </div>
-                <div class="hero-floating-badge badge-3" data-aos="zoom-in" data-aos-delay="1000">
-                    <span>📱</span> Mobile
-                </div>
-            </div>
-        </div>
-
-        <div class="scroll-indicator">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
-            <span>Scroll Down</span>
-        </div>
-    </section>
-
-    <!-- ============ ABOUT SECTION ============ -->
-    <section class="about" id="about">
-        <div class="section-container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">About Me</span>
-                <h2 class="section-title">Get to know me</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="about-content">
-                <div class="about-image" data-aos="fade-right">
-                    <div class="about-image-wrapper">
-                        <img src="image/IMG_2343.JPG" alt="About Me">
-                        <div class="about-image-overlay">
-                            <p>"I build, I break, I learn, I grow.<br>That's the developer's journey."</p>
-                            <h4>— Md Al Amin</h4>
-                        </div>
-                    </div>
-                    <div class="about-experience-badge">
-                        <span class="exp-number">3+</span>
-                        <span class="exp-text">Years of<br>Coding</span>
-                    </div>
-                </div>
-
-                <div class="about-text" data-aos="fade-left">
-                    <h3>A Passionate Developer & Problem Solver</h3>
-                    <p>
-                        I'm Md Al Amin, a dedicated Computer Science & Engineering student at Daffodil International
-                        University
-                        with a strong foundation in <strong>Java, C/C++, Python, Flutter, FastAPI, MySQL,
-                            PostgreSQL</strong>,
-                        and modern web technologies.
-                    </p>
-                    <p>
-                        My journey in tech is driven by curiosity, consistency, and a love for solving real-world
-                        problems
-                        through software. I specialize in cross-platform app development, backend engineering, and
-                        machine
-                        learning — always aiming to turn ideas into smart, scalable solutions.
-                    </p>
-                    <p>
-                        What truly excites me is the role of <strong>Artificial Intelligence</strong> in shaping the
-                        future.
-                        I'm constantly exploring new tools, frameworks, and applications — whether it's training ML
-                        models,
-                        building intuitive UIs with Flutter, or designing clean backend systems with FastAPI.
-                    </p>
-
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Projects Built</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">6+</span>
-                            <span class="stat-label">Technologies</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Passion</span>
-                        </div>
-                    </div>
-
-                    <div class="about-buttons">
-                        <a href="#contact" class="btn btn-primary">Let's Connect</a>
-                        <a href="cv/MD.AL_AMIN.pdf" class="btn btn-outline" download="MD.AL_AMIN_CV.pdf">Download CV</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ SERVICES SECTION ============ -->
-    <section class="services" id="services">
-        <div class="section-container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">What I Do</span>
-                <h2 class="section-title">My Services</h2>
-                <div class="section-line"></div>
-                <p class="section-subtitle">From clean UIs to scalable backends and smart ML — built with intention.</p>
-            </div>
-
-            <div class="services-grid">
-                <article class="service-card" data-aos="fade-up" data-aos-delay="0">
-                    <div class="service-icon">🕸️</div>
-                    <h3>Web Development</h3>
-                    <p>Responsive, accessible frontends with HTML, CSS, JavaScript, and modern frameworks.</p>
-                    <div class="service-tags">
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                    </div>
-                </article>
-
-                <article class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">📱</div>
-                    <h3>App Development</h3>
-                    <p>Cross-platform mobile apps with Flutter and React for smooth, native-like experiences.</p>
-                    <div class="service-tags">
-                        <span>Flutter</span><span>React</span>
-                    </div>
-                </article>
-
-                <article class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">⚙️</div>
-                    <h3>Backend & APIs</h3>
-                    <p>Fast, secure REST APIs with authentication, integrations, and robust architecture.</p>
-                    <div class="service-tags">
-                        <span>FastAPI</span><span>REST</span><span>Python</span>
-                    </div>
-                </article>
-
-                <article class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon">🗄️</div>
-                    <h3>Database Design</h3>
-                    <p>Schema design, complex queries, and performance optimization for any scale.</p>
-                    <div class="service-tags">
-                        <span>MySQL</span><span>PostgreSQL</span><span>SQLite</span>
-                    </div>
-                </article>
-
-                <article class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-icon">🧠</div>
-                    <h3>ML & Analytics</h3>
-                    <p>Model training, data analysis, and predictive insights for real-world impact.</p>
-                    <div class="service-tags">
-                        <span>Python</span><span>ML</span><span>Analytics</span>
-                    </div>
-                </article>
-
-                <article class="service-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-icon">🔗</div>
-                    <h3>Version Control</h3>
-                    <p>Clean Git workflows, CI/CD pipelines, and collaborative development practices.</p>
-                    <div class="service-tags">
-                        <span>Git</span><span>GitHub</span><span>CI/CD</span>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ SKILLS SECTION ============ -->
-    <section class="skills" id="skills">
-        <div class="section-container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">My Toolkit</span>
-                <h2 class="section-title">Skills & Technologies</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="skills-content">
-                <div class="skill-group" data-aos="fade-up" data-aos-delay="0">
-                    <h3 class="skill-group-title">
-                        <span class="skill-group-icon">🎨</span> Frontend
-                    </h3>
-                    <div class="skill-cards">
-                        <div class="skill-card">
-                            <i class="devicon-html5-plain colored"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-css3-plain colored"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-javascript-plain colored"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-react-original colored"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-flutter-plain colored"></i>
-                            <span>Flutter</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="skill-group-title">
-                        <span class="skill-group-icon">⚙️</span> Backend
-                    </h3>
-                    <div class="skill-cards">
-                        <div class="skill-card">
-                            <i class="devicon-python-plain colored"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-java-plain colored"></i>
-                            <span>Java</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-fastapi-plain colored"></i>
-                            <span>FastAPI</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-cplusplus-plain colored"></i>
-                            <span>C/C++</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="skill-group-title">
-                        <span class="skill-group-icon">🛢️</span> Databases
-                    </h3>
-                    <div class="skill-cards">
-                        <div class="skill-card">
-                            <i class="devicon-mysql-plain colored"></i>
-                            <span>MySQL</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-postgresql-plain colored"></i>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-sqlite-plain colored"></i>
-                            <span>SQLite</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-group" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="skill-group-title">
-                        <span class="skill-group-icon">🔧</span> DevOps & Tools
-                    </h3>
-                    <div class="skill-cards">
-                        <div class="skill-card">
-                            <i class="devicon-git-plain colored"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-github-original"></i>
-                            <span>GitHub</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-linux-plain"></i>
-                            <span>Linux</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="devicon-vscode-plain colored"></i>
-                            <span>VS Code</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ PROJECTS SECTION ============ -->
-    <section class="projects" id="projects">
-        <div class="section-container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">My Work</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="project-filters" data-aos="fade-up">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="flutter">Flutter</button>
-                <button class="filter-btn" data-filter="python">Python</button>
-                <button class="filter-btn" data-filter="java">Java</button>
-                <button class="filter-btn" data-filter="hardware">Hardware</button>
-                <button class="filter-btn" data-filter="cpp">C++</button>
-            </div>
-
-            <div class="projects-grid">
-
-                <!-- ── Finura ── -->
-                <article class="project-card featured-card" data-category="flutter " data-category="python"
-                    data-aos="fade-up" data-aos-delay="0" data-title="Finura — AI Finance Assistant" data-emoji="💰"
-                    data-desc="An AI-powered personal finance assistant built with Flutter (frontend) and FastAPI (backend). Finura goes beyond expense tracking — it understands your mood, habits, and saving goals to help you make smarter financial decisions in real time."
-                    data-features="Secure login with password &amp; PIN 🔑|Offline SQLite + online PostgreSQL sync 🌍|AI auto-categorization (Naive Bayes &amp; Logistic Regression)|LSTM model for spending &amp; mood prediction 📈|FCM smart notifications to prevent overspending 💸|Dashboards, saving planner, chatbot &amp; history 🤖"
-                    data-tech="Flutter,FastAPI,SQLite,PostgreSQL,LSTM,Naive Bayes,FCM"
-                    data-github="https://github.com/Saqlain-mushtaq-alamin" data-video="">
-                    <div class="project-image">
-                        <div class="project-placeholder project-gradient-finura">💰</div>
-                        <div class="project-badge-featured">Featured</div>
-                        <div class="project-overlay">
-                            <button class="project-link project-detail-btn" aria-label="View project details">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-                                </svg>
-                            </button>
-                            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="project-link"
-                                aria-label="View code">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Finura</h3>
-                        <p>AI-powered finance assistant that predicts spending, tracks mood, and sends smart FCM alerts
-                            to help you save.</p>
-                        <div class="project-tags">
-                            <span>Flutter</span><span>FastAPI</span><span>ML</span><span>LSTM</span><span>PostgreSQL</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- ── Finanalyzer ── -->
-                <article class="project-card" data-category="java" data-aos="fade-up" data-aos-delay="100"
-                    data-title="Finanalyzer" data-emoji="📊"
-                    data-desc="A simple yet powerful accounting tool that automates and visualizes key financial tasks. Perfect for students, small businesses, or anyone learning the accounting process. Performs journal entries, general ledger management, trial balance generation, and tabular math-based analysis."
-                    data-features="Journal Entry Creation 📘|General Ledger Management 📒|Trial Balance Calculation 📈|Tabular Math-Based Analysis 🧮|Clean CLI interface|Open source &amp; extensible"
-                    data-tech="Python,Accounting,Data Analysis,CLI"
-                    data-github="https://github.com/Saqlain-mushtaq-alamin/Finanalyzer-" data-video="">
-                    <div class="project-image">
-                        <div class="project-placeholder project-gradient-finanalyzer">📊</div>
-                        <div class="project-overlay">
-                            <button class="project-link project-detail-btn" aria-label="View project details">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-                                </svg>
-                            </button>
-                            <a href="https://github.com/Saqlain-mushtaq-alamin/Finanalyzer-" target="_blank"
-                                class="project-link" aria-label="View code">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Finanalyzer</h3>
-                        <p>Accounting automation tool covering journal entries, general ledger, and trial balance
-                            generation.</p>
-                        <div class="project-tags">
-                            <span>Python</span><span>Accounting</span><span>Data Analysis</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- ── WiFi Strength Scanner ── -->
-                <article class="project-card" data-category="python" data-aos="fade-up" data-aos-delay="200"
-                    data-title="WiFi Strength Scanner" data-emoji="📡"
-                    data-desc="A comprehensive desktop tool for scanning and visualizing WiFi signal strength with heatmap generation. Upload a floor blueprint, mark scan points, and the IDW interpolation algorithm generates a detailed signal heatmap overlaid on your blueprint. Supports project save/load and produces a standalone .exe installer."
-                    data-features="WiFi signal scanning via Netsh parser|IDW interpolation heatmap generation|Blueprint upload &amp; heatmap overlay|Interactive point marking on floor plans|Project management (JSON/SQLite)|Standalone .exe installer build"
-                    data-tech="Python,PyQt5,SQLite,IDW Algorithm,Heatmap,PyInstaller"
-                    data-github="https://github.com/Saqlain-mushtaq-alamin" data-video="">
-                    <div class="project-image">
-                        <div class="project-placeholder project-gradient-wifi">📡</div>
-                        <div class="project-overlay">
-                            <button class="project-link project-detail-btn" aria-label="View project details">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-                                </svg>
-                            </button>
-                            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="project-link"
-                                aria-label="View code">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>WiFi Strength Scanner</h3>
-                        <p>Desktop tool that visualizes WiFi signal coverage as a heatmap overlaid on a floor blueprint
-                            using IDW interpolation.</p>
-                        <div class="project-tags">
-                            <span>Python</span><span>PyQt5</span><span>Heatmap</span><span>SQLite</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- ── Snake Game ── -->
-                <article class="project-card" data-category="java" data-aos="fade-up" data-aos-delay="300"
-                    data-title="Graphical Snake Game" data-emoji="🎮"
-                    data-desc="A classic Snake Game reimagined with a graphical multi-layer style in Java, making it genuinely enjoyable to play. Built as a Java lab project, it demonstrates core OOP principles with smooth rendering, progressive difficulty, and a polished visual experience."
-                    data-features="Multi-layer graphical design|Smooth game rendering engine|Progressive difficulty scaling|Responsive keyboard controls|Collision detection system|Score tracking &amp; high score board"
-                    data-tech="Java,Swing,OOP,Game Development" data-github="https://github.com/Saqlain-mushtaq-alamin"
-                    data-video="">
-                    <div class="project-image">
-                        <div class="project-placeholder project-gradient-snake">🎮</div>
-                        <div class="project-overlay">
-                            <button class="project-link project-detail-btn" aria-label="View project details">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-                                </svg>
-                            </button>
-                            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="project-link"
-                                aria-label="View code">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Snake Game</h3>
-                        <p>Graphical multi-layer Snake Game in Java with smooth animations and progressive difficulty.
-                            Java lab project.</p>
-                        <div class="project-tags">
-                            <span>Java</span><span>Swing</span><span>OOP</span><span>Game Dev</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- ── Morse Code Interpreter ── -->
-                <article class="project-card" data-category="hardware" data-aos="fade-up" data-aos-delay="400"
-                    data-title="Morse Code Interpreter" data-emoji="📟"
-                    data-desc="A bidirectional wireless Morse Code communication system using two Arduino Uno boards. Users input Morse code via tactile buttons, the system translates it to English, and transmits it wirelessly via the NRF24L01+ PA LNA module. The translated message displays in real time on a 16x2 LCD with I2C support. Each unit acts as both sender and receiver."
-                    data-features="Bidirectional wireless communication|Morse code to English translation|NRF24L01+ PA LNA transceiver|16x2 LCD with I2C real-time display|4-button control: Dot, Dash, Action, Transmit|Hold Action to delete · Tap Action to space"
-                    data-tech="Arduino Uno,NRF24L01+,LCD I2C,RF24,C++,Embedded"
-                    data-github="https://github.com/Saqlain-mushtaq-alamin"
-                    data-video="https://www.youtube.com/watch?v=zYx_dkuq2mQ">
-                    <div class="project-image">
-                        <div class="project-placeholder project-gradient-morse">📟</div>
-                        <div class="project-overlay">
-                            <button class="project-link project-detail-btn" aria-label="View project details">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-                                </svg>
-                            </button>
-                            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="project-link"
-                                aria-label="View code">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Morse Code Interpreter</h3>
-                        <p>Bidirectional wireless Morse-to-English communication system using Arduino + NRF24L01+ with
-                            real-time LCD output.</p>
-                        <div class="project-tags">
-                            <span>Arduino</span><span>NRF24L01+</span><span>Embedded</span><span>C++</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- ── MINI-Compiler ── -->
-                <article class="project-card" data-category="cpp" data-aos="fade-up" data-aos-delay="500"
-                    data-title="MINI-Compiler" data-emoji="⚙️"
-                    data-desc="A full compiler for the MINI programming language — a modern, type-safe, beginner-friendly language. MINI stands for Minimalistic Instruction Interface. Supports dynamic lists (C++ vector-like), control flow, string operations, and automatic memory management. Built as Compiler Design coursework."
-                    data-features="Strong type system: number, string, list&lt;TYPE&gt;|Dynamic lists with automatic resizing|Control flow: when/otherwise, repeat, begone|String concatenation, escape sequences &amp; type conversion|Automatic memory cleanup — no manual management|Clean, readable syntax for beginners"
-                    data-tech="C++,Compiler Design,Lexer,Parser,Type System,MINI Language"
-                    data-github="https://github.com/Saqlain-mushtaq-alamin" data-video="">
-                    <div class="project-image">
-                        <div class="project-placeholder project-gradient-compiler">⚙️</div>
-                        <div class="project-overlay">
-                            <button class="project-link project-detail-btn" aria-label="View project details">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-                                </svg>
-                            </button>
-                            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="project-link"
-                                aria-label="View code">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>MINI-Compiler</h3>
-                        <p>A full compiler for the MINI language — type-safe, memory-safe, with dynamic lists and clean
-                            syntax. Compiler Design coursework.</p>
-                        <div class="project-tags">
-                            <span>C++</span><span>Compiler Design</span><span>Type System</span>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ CONTACT SECTION ============ -->
-    <section class="contact" id="contact">
-        <div class="section-container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Say Hello</span>
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="section-line"></div>
-                <p class="section-subtitle">Have a project in mind? Let's work together to make it happen.</p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-info-card">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>alamin86911@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-card">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Dhaka, Bangladesh</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-card">
-                        <div class="contact-icon">💼</div>
-                        <div>
-                            <h4>Freelance</h4>
-                            <p>Available for projects</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-social">
-                        <h4>Follow Me</h4>
-                        <div class="contact-social-links">
-                            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="social-link">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" class="social-link">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                                    <path
-                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                </svg>
-                            </a>
-                            <a href="https://facebook.com" target="_blank" class="social-link">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                                    <path
-                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <form class="contact-form" data-aos="fade-left" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Project Discussion">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
-                            required></textarea>
-                    </div>
-                    <div class="form-status" id="formStatus"></div>
-                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
-                        <span id="submitLabel">Send Message</span>
-                        <svg id="submitIcon" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
-                        </svg>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ PROJECT DETAIL MODAL ============ -->
-    <div class="project-modal-overlay" id="projectModal">
-        <div class="project-modal">
-            <button class="modal-close" id="modalClose" aria-label="Close modal">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 6L6 18M6 6l12 12" />
-                </svg>
-            </button>
-            <div class="modal-body">
-                <div class="modal-hero">
-                    <div class="modal-emoji" id="modalEmoji"></div>
-                    <div class="modal-hero-info">
-                        <h2 id="modalTitle"></h2>
-                        <div class="modal-tech" id="modalTech"></div>
-                    </div>
-                </div>
-                <div class="modal-content">
-                    <div class="modal-section">
-                        <h3>📖 About This Project</h3>
-                        <p id="modalDesc"></p>
-                    </div>
-                    <div class="modal-section">
-                        <h3>✨ Key Features</h3>
-                        <ul class="modal-features" id="modalFeatures"></ul>
-                    </div>
-                    <div class="modal-section modal-video-section" id="modalVideoSection" style="display:none;">
-                        <h3>🎬 Demo Video</h3>
-                        <div class="modal-video-wrapper" id="modalVideo"></div>
-                    </div>
-                    <div class="modal-actions">
-                        <a href="#" target="_blank" class="btn btn-primary" id="modalGithub">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="nav-pill" id="navPill">
+      <a href="#hero" class="nav-item active" data-section="hero">Home</a>
+      <a href="#about" class="nav-item" data-section="about">About</a>
+      <a href="#services" class="nav-item" data-section="services">Services</a>
+      <a href="#skills" class="nav-item" data-section="skills">Skills</a>
+      <a href="#projects" class="nav-item" data-section="projects">Projects</a>
+      <a href="#contact" class="nav-item" data-section="contact">Contact</a>
+      <div class="nav-indicator"></div>
     </div>
 
-    <!-- ============ FOOTER ============ -->
-    <footer class="footer">
-        <div class="footer-cta-banner">
-            <div class="footer-cta-glow"></div>
-            <div class="footer-cta-content">
-                <h2>Let's build something <span class="gradient-text">amazing</span> together</h2>
-                <p>I'm always open to new opportunities, collaborations, and exciting projects.</p>
-                <a href="#contact" class="btn btn-primary">
-                    <span>Start a Conversation</span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="#hero" class="nav-logo">
-                        <span class="logo-icon">
-                            <svg class="lightning-bolt" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path class="bolt-body"
-                                    d="M13 2L4.09 12.96A1 1 0 005 14.5h5.5L10 22l8.91-10.96A1 1 0 0018 10h-5.5L13 2z" />
-                                <line class="bolt-spark spark-1" x1="18" y1="4" x2="21" y2="2" stroke-width="1.5"
-                                    stroke-linecap="round" />
-                                <line class="bolt-spark spark-2" x1="20" y1="8" x2="23" y2="7" stroke-width="1.5"
-                                    stroke-linecap="round" />
-                                <line class="bolt-spark spark-3" x1="4" y1="14" x2="1" y2="16" stroke-width="1.5"
-                                    stroke-linecap="round" />
-                                <line class="bolt-spark spark-4" x1="6" y1="18" x2="3" y2="20" stroke-width="1.5"
-                                    stroke-linecap="round" />
-                            </svg>
-                        </span>
-                        <span class="logo-text"><span class="logo-bracket">&lt;</span>Al Amin<span class="logo-bracket">
-                                /&gt;</span></span>
-                    </a>
-                    <p>CS student & developer crafting clean, scalable digital solutions. Turning ideas into reality
-                        through code.</p>
-                    <div class="footer-social">
-                        <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" aria-label="GitHub"
-                            class="footer-social-link">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="footer-social-link">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
-                        </a>
-                        <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="footer-social-link">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-                                <path
-                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer-nav">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="#hero"><span class="footer-link-arrow">→</span> Home</a></li>
-                        <li><a href="#about"><span class="footer-link-arrow">→</span> About</a></li>
-                        <li><a href="#services"><span class="footer-link-arrow">→</span> Services</a></li>
-                        <li><a href="#projects"><span class="footer-link-arrow">→</span> Projects</a></li>
-                        <li><a href="#contact"><span class="footer-link-arrow">→</span> Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-nav">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank"><span
-                                    class="footer-link-arrow">→</span> GitHub</a></li>
-                        <li><a href="https://linkedin.com" target="_blank"><span class="footer-link-arrow">→</span>
-                                LinkedIn</a></li>
-                        <li><a href="cv/MD.AL_AMIN.pdf" target="_blank"><span class="footer-link-arrow">→</span>
-                                Resume</a></li>
-                        <li><a href="mailto:alamin86911@gmail.com"><span class="footer-link-arrow">→</span> Email Me</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Md Al Amin. Crafted with <span class="footer-heart">❤️</span> in Dhaka</p>
-                <p class="footer-tech">HTML • CSS • JavaScript</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ============ BACK TO TOP ============ -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 15l-6-6-6 6" />
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
         </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+      <a href="#contact" class="nav-hire">Hire Me <span>↗</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="mob-link">Home</a>
+    <a href="#about" class="mob-link">About</a>
+    <a href="#services" class="mob-link">Services</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#contact" class="mob-link">Contact</a>
+    <a href="#contact" class="mob-hire">Hire Me ↗</a>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════
+     HERO — 3D space canvas background
+════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <canvas id="heroCanvas" class="hero-canvas"></canvas>
+
+  <div class="hero-inner">
+    <div class="hero-text-col">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+
+      <h1 class="hero-heading">
+        <span class="heading-line">Building things</span>
+        <span class="heading-line accent-line">with intelligence</span>
+        <span class="heading-line">& intention.</span>
+      </h1>
+
+      <p class="hero-sub">
+        I'm <strong>Md Al Amin</strong> — a Full Stack Developer & AI enthusiast from Dhaka, crafting LLM-powered systems, cross-platform apps, and scalable backends that push what software can do.
+      </p>
+
+      <div class="hero-typerow">
+        <span class="type-label">Currently working on:</span>
+        <span class="typewriter-wrap"><span id="typewriter"></span><span class="tcursor">|</span></span>
+      </div>
+
+      <div class="hero-cta-row">
+        <a href="#projects" class="cta-primary">
+          View my work
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="cta-secondary">Let's talk</a>
+        <a href="cv/MD.AL_AMIN.pdf" class="cta-ghost" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Resume
+        </a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" rel="noopener" class="hero-social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="19" height="19"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="hero-social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="19" height="19"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:amin86911@gmail.com" class="hero-social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual-col">
+      <div class="hero-card-scene">
+        <div class="hcard hcard-main">
+          <div class="hcard-header">
+            <span class="hcard-dot red"></span><span class="hcard-dot yellow"></span><span class="hcard-dot green"></span>
+            <span class="hcard-title">aria_assistant.py</span>
+          </div>
+          <pre class="hcard-code"><span class="c-kw">class</span> <span class="c-cls">ARIA</span>:
+  <span class="c-kw">def</span> <span class="c-fn">__init__</span>(self):
+    self.memory = <span class="c-cls">ChromaDB</span>()
+    self.vision = <span class="c-cls">OpenCV</span>()
+    self.voice = <span class="c-cls">Whisper</span>()
+    self.llm = <span class="c-cls">Ollama</span>(<span class="c-str">"llama3"</span>)
+
+  <span class="c-kw">async def</span> <span class="c-fn">think</span>(self, query):
+    ctx = <span class="c-kw">await</span> self.memory.recall()
+    <span class="c-kw">return await</span> self.llm.reason(
+      query, context=ctx
+    )</pre>
+        </div>
+
+        <div class="hcard hcard-stat hcard-stat-1">
+          <div class="stat-icon">🤖</div>
+          <div class="stat-info">
+            <span class="stat-val">CGPA 3.36</span>
+            <span class="stat-lbl">DIU · CSE</span>
+          </div>
+        </div>
+
+        <div class="hcard hcard-stat hcard-stat-2">
+          <div class="stat-icon">🚀</div>
+          <div class="stat-info">
+            <span class="stat-val">6+ months</span>
+            <span class="stat-lbl">Freelance on Fiverr</span>
+          </div>
+        </div>
+
+        <div class="hcard hcard-stat hcard-stat-3">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-info">
+            <span class="stat-val">10+ Projects</span>
+            <span class="stat-lbl">Built & shipped</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     ABOUT
+════════════════════════════════════ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-label">About Me</div>
+
+    <div class="about-grid">
+      <div class="about-img-col">
+        <div class="about-img-frame">
+          <img src="image/IMG_2343.JPG" alt="Md Al Amin" class="about-photo">
+          <div class="about-img-overlay">
+            <p>"I build, I break,<br>I learn, I grow."</p>
+            <cite>— Md Al Amin</cite>
+          </div>
+          <div class="about-exp-badge">
+            <strong>3+</strong>
+            <span>Years Coding</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        <h2 class="section-heading">A passionate developer<br><em>& problem solver</em></h2>
+        <p class="about-lead">
+          I'm a Computer Science & Engineering student at <strong>Daffodil International University</strong> (graduating Dec 2026, CGPA 3.36) with a strong foundation in full-stack development, AI engineering, and embedded systems.
+        </p>
+        <p class="about-body">
+          My work spans from LLM-powered desktop assistants with computer vision, to cross-platform mobile apps with offline-first architecture and machine learning pipelines. I thrive on building things that are genuinely useful — not just technically sound.
+        </p>
+        <p class="about-body">
+          Currently freelancing on Fiverr (since Jan 2026), delivering Flutter + FastAPI applications for international clients. I bring the same energy to every project: clean architecture, thoughtful UX, and a relentless drive to ship.
+        </p>
+
+        <div class="about-stats-row">
+          <div class="astat">
+            <span class="astat-num" data-target="10">0</span><span class="astat-plus">+</span>
+            <span class="astat-lbl">Projects Built</span>
+          </div>
+          <div class="astat">
+            <span class="astat-num" data-target="15">0</span><span class="astat-plus">+</span>
+            <span class="astat-lbl">Technologies</span>
+          </div>
+          <div class="astat">
+            <span class="astat-num" data-target="100">0</span><span class="astat-plus">%</span>
+            <span class="astat-lbl">Commitment</span>
+          </div>
+        </div>
+
+        <div class="about-tags">
+          <span>Python</span><span>Flutter</span><span>FastAPI</span>
+          <span>LangChain</span><span>Machine Learning</span><span>Embedded Systems</span>
+          <span>CGPA 3.36 / 4.00</span>
+        </div>
+
+        <div class="about-actions">
+          <a href="#contact" class="cta-primary">Let's Connect</a>
+          <a href="cv/MD.AL_AMIN.pdf" class="cta-secondary" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     SERVICES — holographic cards
+════════════════════════════════════ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-label">What I Do</div>
+    <h2 class="section-heading center-h">My <em>Services</em></h2>
+    <p class="section-sub center-s">From intelligent AI systems to pixel-perfect apps — built with care, shipped with pride.</p>
+
+    <div class="services-grid">
+
+      <div class="svc-card" data-index="01">
+        <div class="svc-glow"></div>
+        <div class="svc-num">01</div>
+        <div class="svc-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/></svg>
+        </div>
+        <h3>AI & LLM Systems</h3>
+        <p>Building agentic AI assistants with contextual memory, multi-step reasoning, and multimodal capabilities using LangChain, Ollama, and vector databases.</p>
+        <div class="svc-tags"><span>LangChain</span><span>ChromaDB</span><span>Ollama</span><span>RAG</span></div>
+        <div class="svc-arrow">→</div>
+      </div>
+
+      <div class="svc-card featured-svc" data-index="02">
+        <div class="svc-glow"></div>
+        <div class="svc-num">02</div>
+        <div class="svc-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5"/></svg>
+        </div>
+        <h3>Mobile App Development</h3>
+        <p>Cross-platform apps with Flutter — offline-first architecture, background sync, and native-quality experiences for iOS and Android.</p>
+        <div class="svc-tags"><span>Flutter</span><span>Dart</span><span>SQLite</span><span>FCM</span></div>
+        <div class="svc-arrow">→</div>
+      </div>
+
+      <div class="svc-card" data-index="03">
+        <div class="svc-glow"></div>
+        <div class="svc-num">03</div>
+        <div class="svc-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Backend & APIs</h3>
+        <p>Fast, secure REST APIs with FastAPI — authentication, real-time sync, third-party integrations, and scalable architecture.</p>
+        <div class="svc-tags"><span>FastAPI</span><span>Python</span><span>PostgreSQL</span><span>REST</span></div>
+        <div class="svc-arrow">→</div>
+      </div>
+
+      <div class="svc-card" data-index="04">
+        <div class="svc-glow"></div>
+        <div class="svc-num">04</div>
+        <div class="svc-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Machine Learning</h3>
+        <p>Model training, predictive analytics, and ML pipelines — from expense prediction with LSTM to emotion-aware AI adaptation.</p>
+        <div class="svc-tags"><span>Python</span><span>LSTM</span><span>Scikit-learn</span><span>DeepFace</span></div>
+        <div class="svc-arrow">→</div>
+      </div>
+
+      <div class="svc-card" data-index="05">
+        <div class="svc-glow"></div>
+        <div class="svc-num">05</div>
+        <div class="svc-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Web Development</h3>
+        <p>Responsive, accessible, and beautiful frontends with HTML, CSS, and JavaScript — clean code with a strong eye for design.</p>
+        <div class="svc-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="svc-arrow">→</div>
+      </div>
+
+      <div class="svc-card" data-index="06">
+        <div class="svc-glow"></div>
+        <div class="svc-num">06</div>
+        <div class="svc-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h.01M15 9h.01M9 15h.01M15 15h.01M12 12h.01"/></svg>
+        </div>
+        <h3>Embedded & Hardware</h3>
+        <p>Building real-world hardware systems with Arduino, RF modules, and C++ — from wireless communication devices to sensor networks.</p>
+        <div class="svc-tags"><span>Arduino</span><span>C++</span><span>NRF24L01+</span></div>
+        <div class="svc-arrow">→</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     SKILLS — futuristic orbit display
+════════════════════════════════════ -->
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section-label">My Toolkit</div>
+    <h2 class="section-heading center-h">Skills & <em>Technologies</em></h2>
+
+    <div class="skills-universe">
+
+      <!-- Category tabs -->
+      <div class="skill-tabs">
+        <button class="skill-tab active" data-cat="all">All</button>
+        <button class="skill-tab" data-cat="frontend">Frontend</button>
+        <button class="skill-tab" data-cat="backend">Backend</button>
+        <button class="skill-tab" data-cat="ai">AI / ML</button>
+        <button class="skill-tab" data-cat="database">Databases</button>
+        <button class="skill-tab" data-cat="tools">Tools</button>
+      </div>
+
+      <div class="skills-board">
+
+        <!-- Frontend -->
+        <div class="skill-orb" data-cat="frontend" style="--i:0">
+          <div class="orb-inner"><i class="devicon-html5-plain colored"></i></div>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-orb" data-cat="frontend" style="--i:1">
+          <div class="orb-inner"><i class="devicon-css3-plain colored"></i></div>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-orb" data-cat="frontend" style="--i:2">
+          <div class="orb-inner"><i class="devicon-javascript-plain colored"></i></div>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-orb" data-cat="frontend" style="--i:3">
+          <div class="orb-inner"><i class="devicon-flutter-plain colored"></i></div>
+          <span>Flutter</span>
+        </div>
+        <div class="skill-orb" data-cat="frontend" style="--i:4">
+          <div class="orb-inner"><i class="devicon-react-original colored"></i></div>
+          <span>React</span>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-orb" data-cat="backend" style="--i:5">
+          <div class="orb-inner"><i class="devicon-python-plain colored"></i></div>
+          <span>Python</span>
+        </div>
+        <div class="skill-orb" data-cat="backend" style="--i:6">
+          <div class="orb-inner"><i class="devicon-java-plain colored"></i></div>
+          <span>Java</span>
+        </div>
+        <div class="skill-orb" data-cat="backend" style="--i:7">
+          <div class="orb-inner"><i class="devicon-fastapi-plain colored"></i></div>
+          <span>FastAPI</span>
+        </div>
+        <div class="skill-orb" data-cat="backend" style="--i:8">
+          <div class="orb-inner"><i class="devicon-cplusplus-plain colored"></i></div>
+          <span>C++</span>
+        </div>
+
+        <!-- AI/ML -->
+        <div class="skill-orb" data-cat="ai" style="--i:9">
+          <div class="orb-inner" style="font-size:22px">🦜</div>
+          <span>LangChain</span>
+        </div>
+        <div class="skill-orb" data-cat="ai" style="--i:10">
+          <div class="orb-inner" style="font-size:22px">🧠</div>
+          <span>Ollama</span>
+        </div>
+        <div class="skill-orb" data-cat="ai" style="--i:11">
+          <div class="orb-inner" style="font-size:22px">👁️</div>
+          <span>OpenCV</span>
+        </div>
+        <div class="skill-orb" data-cat="ai" style="--i:12">
+          <div class="orb-inner" style="font-size:22px">🎙️</div>
+          <span>Whisper</span>
+        </div>
+        <div class="skill-orb" data-cat="ai" style="--i:13">
+          <div class="orb-inner" style="font-size:22px">📊</div>
+          <span>LSTM / ML</span>
+        </div>
+        <div class="skill-orb" data-cat="ai" style="--i:14">
+          <div class="orb-inner" style="font-size:22px">🔍</div>
+          <span>ChromaDB</span>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-orb" data-cat="database" style="--i:15">
+          <div class="orb-inner"><i class="devicon-mysql-plain colored"></i></div>
+          <span>MySQL</span>
+        </div>
+        <div class="skill-orb" data-cat="database" style="--i:16">
+          <div class="orb-inner"><i class="devicon-postgresql-plain colored"></i></div>
+          <span>PostgreSQL</span>
+        </div>
+        <div class="skill-orb" data-cat="database" style="--i:17">
+          <div class="orb-inner"><i class="devicon-sqlite-plain colored"></i></div>
+          <span>SQLite</span>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-orb" data-cat="tools" style="--i:18">
+          <div class="orb-inner"><i class="devicon-git-plain colored"></i></div>
+          <span>Git</span>
+        </div>
+        <div class="skill-orb" data-cat="tools" style="--i:19">
+          <div class="orb-inner"><i class="devicon-github-original"></i></div>
+          <span>GitHub</span>
+        </div>
+        <div class="skill-orb" data-cat="tools" style="--i:20">
+          <div class="orb-inner"><i class="devicon-vscode-plain colored"></i></div>
+          <span>VS Code</span>
+        </div>
+        <div class="skill-orb" data-cat="tools" style="--i:21">
+          <div class="orb-inner" style="font-size:22px">🔧</div>
+          <span>PyQt5/6</span>
+        </div>
+        <div class="skill-orb" data-cat="tools" style="--i:22">
+          <div class="orb-inner" style="font-size:22px">📡</div>
+          <span>MediaPipe</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Proficiency bars -->
+    <div class="proficiency-bars">
+      <div class="prof-row">
+        <div class="prof-item">
+          <div class="prof-top"><span>Python / FastAPI</span><span>90%</span></div>
+          <div class="prof-track"><div class="prof-fill" style="--pct:90%"></div></div>
+        </div>
+        <div class="prof-item">
+          <div class="prof-top"><span>Flutter / Dart</span><span>85%</span></div>
+          <div class="prof-track"><div class="prof-fill" style="--pct:85%"></div></div>
+        </div>
+        <div class="prof-item">
+          <div class="prof-top"><span>AI / LLM Systems</span><span>80%</span></div>
+          <div class="prof-track"><div class="prof-fill" style="--pct:80%"></div></div>
+        </div>
+        <div class="prof-item">
+          <div class="prof-top"><span>SQL Databases</span><span>85%</span></div>
+          <div class="prof-track"><div class="prof-fill" style="--pct:85%"></div></div>
+        </div>
+        <div class="prof-item">
+          <div class="prof-top"><span>Java / C++</span><span>75%</span></div>
+          <div class="prof-track"><div class="prof-fill" style="--pct:75%"></div></div>
+        </div>
+        <div class="prof-item">
+          <div class="prof-top"><span>Machine Learning</span><span>70%</span></div>
+          <div class="prof-track"><div class="prof-fill" style="--pct:70%"></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     PROJECTS — cinematic cards
+════════════════════════════════════ -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-label">My Work</div>
+    <h2 class="section-heading center-h">Featured <em>Projects</em></h2>
+    <p class="section-sub center-s">Real products, shipped. Every one a learning. Every one a story.</p>
+
+    <div class="proj-filters">
+      <button class="pf-btn active" data-filter="all">All</button>
+      <button class="pf-btn" data-filter="flutter">Flutter</button>
+      <button class="pf-btn" data-filter="python">Python</button>
+      <button class="pf-btn" data-filter="java">Java</button>
+      <button class="pf-btn" data-filter="hardware">Hardware</button>
+      <button class="pf-btn" data-filter="cpp">C++</button>
+    </div>
+
+    <div class="proj-grid">
+
+      <!-- ARIA -->
+      <article class="proj-card proj-card--wide" data-cat="python"
+        data-title="ARIA — Adaptive Responsive Intelligent Assistant"
+        data-emoji="🤖"
+        data-desc="An adaptive AI desktop assistant combining voice interaction, computer vision, gesture recognition, contextual memory, and autonomous task execution. Built with local LLMs for complete privacy — no cloud required."
+        data-features="Multi-step LLM reasoning with memory|Vector-based long-term memory (ChromaDB)|Real-time screen understanding (OpenCV)|Emotion-aware adaptation (DeepFace)|Voice interaction (Whisper)|Gesture recognition (MediaPipe)|Autonomous task execution & automation|Productivity analytics dashboard"
+        data-tech="Python,LangChain,Ollama,ChromaDB,OpenCV,MediaPipe,DeepFace,Whisper,PyQt6"
+        data-github="https://github.com/Saqlain-mushtaq-alamin">
+        <div class="proj-visual proj-vis--aria">
+          <div class="proj-vis-content">
+            <div class="vis-terminal">
+              <div class="vt-bar"><span class="vt-dot"></span><span class="vt-dot"></span><span class="vt-dot"></span></div>
+              <div class="vt-lines">
+                <span><em class="kw">ARIA</em> &gt; Initializing multimodal stack...</span>
+                <span><em class="ok">✓</em> Voice pipeline: Whisper v3 ready</span>
+                <span><em class="ok">✓</em> Vision: OpenCV + MediaPipe loaded</span>
+                <span><em class="ok">✓</em> Memory: 2,847 vectors in ChromaDB</span>
+                <span><em class="ok">✓</em> LLM: Llama 3.2 via Ollama (local)</span>
+                <span class="blink"><em class="kw">ARIA</em> &gt; Ready. How can I help?_</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-badge">Featured</div>
+          <div class="proj-hover-overlay">
+            <button class="proj-details-btn" aria-label="View details">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Details
+            </button>
+            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="proj-gh-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-category">AI · Python · LLM</span>
+            <span class="proj-year">2024–25</span>
+          </div>
+          <h3 class="proj-title">ARIA</h3>
+          <p class="proj-desc">A fully local, privacy-first AI desktop assistant with vision, voice, emotion awareness, and autonomous execution.</p>
+          <div class="proj-tech-row">
+            <span>LangChain</span><span>Ollama</span><span>ChromaDB</span><span>OpenCV</span><span>Whisper</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Finura -->
+      <article class="proj-card" data-cat="flutter python"
+        data-title="Finura — AI-Powered Personal Finance Tracker"
+        data-emoji="💰"
+        data-desc="A cross-platform AI finance assistant that goes beyond expense tracking — understanding spending habits and mood to deliver personalized financial insights with ML-driven predictions and smart notifications."
+        data-features="Secure login: password & PIN|Offline SQLite + PostgreSQL online sync|AI auto-categorization (Naive Bayes & Logistic Regression)|LSTM model for spending & mood prediction|FCM smart notifications to prevent overspending|Financial dashboards & saving planner|AI chatbot for personalized insights|Background conflict resolution sync"
+        data-tech="Flutter,FastAPI,SQLite,PostgreSQL,LSTM,Naive Bayes,FCM,Machine Learning"
+        data-github="https://github.com/Saqlain-mushtaq-alamin">
+        <div class="proj-visual proj-vis--finura">
+          <div class="proj-vis-content">
+            <div class="vis-phone-mockup">
+              <div class="phone-screen">
+                <div class="phone-header">Finura · Finance AI</div>
+                <div class="phone-balance">৳ 48,250</div>
+                <div class="phone-label">Total Balance</div>
+                <div class="phone-bars">
+                  <div class="pbar" style="height:60%"><span>Food</span></div>
+                  <div class="pbar" style="height:40%"><span>Bills</span></div>
+                  <div class="pbar pbar-hi" style="height:80%"><span>Savings</span></div>
+                  <div class="pbar" style="height:50%"><span>Other</span></div>
+                </div>
+                <div class="phone-tip">🤖 ML: On track to save ৳4k this month</div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-hover-overlay">
+            <button class="proj-details-btn" aria-label="View details">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Details
+            </button>
+            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="proj-gh-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta"><span class="proj-category">Flutter · FastAPI · ML</span><span class="proj-year">2025</span></div>
+          <h3 class="proj-title">Finura</h3>
+          <p class="proj-desc">AI finance app with offline-first sync, LSTM spending predictions, and smart FCM nudges.</p>
+          <div class="proj-tech-row"><span>Flutter</span><span>FastAPI</span><span>LSTM</span><span>PostgreSQL</span></div>
+        </div>
+      </article>
+
+      <!-- WiFi Scanner -->
+      <article class="proj-card" data-cat="python"
+        data-title="WiFi Strength Scanner & Heatmap Visualizer"
+        data-emoji="📡"
+        data-desc="A desktop tool that scans WiFi signal strength across physical spaces and renders accurate coverage heatmaps using IDW interpolation overlaid on floor blueprints. Supports project save/load and builds to a standalone .exe installer."
+        data-features="WiFi signal scanning via Netsh parser|IDW interpolation heatmap generation|Blueprint upload & heatmap overlay|Interactive point marking on floor plans|Project management (JSON/SQLite)|Standalone .exe installer build|Historical trend analysis"
+        data-tech="Python,PyQt5,SQLite,IDW Algorithm,Heatmap,PyInstaller"
+        data-github="https://github.com/Saqlain-mushtaq-alamin">
+        <div class="proj-visual proj-vis--wifi">
+          <div class="proj-vis-content">
+            <div class="vis-heatmap">
+              <div class="hm-grid">
+                <div class="hm-cell" style="--h:0.9"></div><div class="hm-cell" style="--h:0.7"></div><div class="hm-cell" style="--h:0.5"></div><div class="hm-cell" style="--h:0.3"></div><div class="hm-cell" style="--h:0.2"></div>
+                <div class="hm-cell" style="--h:0.8"></div><div class="hm-cell" style="--h:1.0"></div><div class="hm-cell" style="--h:0.8"></div><div class="hm-cell" style="--h:0.5"></div><div class="hm-cell" style="--h:0.3"></div>
+                <div class="hm-cell" style="--h:0.6"></div><div class="hm-cell" style="--h:0.8"></div><div class="hm-cell" style="--h:0.6"></div><div class="hm-cell" style="--h:0.4"></div><div class="hm-cell" style="--h:0.2"></div>
+                <div class="hm-cell" style="--h:0.4"></div><div class="hm-cell" style="--h:0.5"></div><div class="hm-cell" style="--h:0.4"></div><div class="hm-cell" style="--h:0.6"></div><div class="hm-cell" style="--h:0.7"></div>
+                <div class="hm-cell" style="--h:0.2"></div><div class="hm-cell" style="--h:0.3"></div><div class="hm-cell" style="--h:0.5"></div><div class="hm-cell" style="--h:0.8"></div><div class="hm-cell" style="--h:0.9"></div>
+              </div>
+              <div class="hm-label">Signal Heatmap · IDW</div>
+            </div>
+          </div>
+          <div class="proj-hover-overlay">
+            <button class="proj-details-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Details
+            </button>
+            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="proj-gh-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta"><span class="proj-category">Python · Desktop · Visualization</span><span class="proj-year">2024</span></div>
+          <h3 class="proj-title">WiFi Heatmap Scanner</h3>
+          <p class="proj-desc">IDW-based heatmap overlay on floor blueprints. Real signal data, beautiful visualizations.</p>
+          <div class="proj-tech-row"><span>Python</span><span>PyQt5</span><span>IDW</span><span>SQLite</span></div>
+        </div>
+      </article>
+
+      <!-- Morse Code -->
+      <article class="proj-card" data-cat="hardware"
+        data-title="Wireless Morse Code Communication System"
+        data-emoji="📟"
+        data-desc="A bidirectional wireless Morse code communication system using two Arduino boards and NRF24L01+ RF modules. Real-time encoder/decoder with 100m+ range — no internet needed. Displayed live on 16x2 LCD."
+        data-features="Bidirectional wireless communication (100m+)|Morse code to English translation|NRF24L01+ PA LNA transceiver|16x2 LCD with I2C real-time display|4-button control: Dot, Dash, Action, Transmit|Both units act as sender & receiver"
+        data-tech="Arduino Uno,NRF24L01+,LCD I2C,RF24,C++,Embedded Systems"
+        data-github="https://github.com/Saqlain-mushtaq-alamin"
+        data-video="https://www.youtube.com/watch?v=zYx_dkuq2mQ">
+        <div class="proj-visual proj-vis--morse">
+          <div class="proj-vis-content">
+            <div class="vis-morse">
+              <div class="morse-display">
+                <div class="morse-lcd">
+                  <div class="lcd-line">SOS: ... --- ...</div>
+                  <div class="lcd-line lcd-blink">RECEIVED: HELLO_</div>
+                </div>
+                <div class="morse-dots">
+                  <span class="md md-s">·</span><span class="md md-l">—</span><span class="md md-s">·</span><span class="md md-s">·</span><span class="md md-l">—</span>
+                </div>
+                <div class="morse-range">📡 Range: 100m+</div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-badge proj-badge-demo">▶ Demo</div>
+          <div class="proj-hover-overlay">
+            <button class="proj-details-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Details
+            </button>
+            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="proj-gh-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta"><span class="proj-category">Hardware · Embedded · Arduino</span><span class="proj-year">2023</span></div>
+          <h3 class="proj-title">Morse Code System</h3>
+          <p class="proj-desc">Wireless bidirectional Morse communication over 100m+, no internet, live LCD display.</p>
+          <div class="proj-tech-row"><span>Arduino</span><span>C++</span><span>NRF24L01+</span><span>RF24</span></div>
+        </div>
+      </article>
+
+      <!-- MINI Compiler -->
+      <article class="proj-card" data-cat="cpp"
+        data-title="MINI-Compiler for Custom Language"
+        data-emoji="⚙️"
+        data-desc="A complete compiler pipeline for the MINI programming language — a modern, type-safe, beginner-friendly language. Supports dynamic lists, control flow, string operations, and automatic memory management."
+        data-features="Strong type system: number, string, list<TYPE>|Dynamic lists with automatic resizing|Control flow: when/otherwise, repeat, begone|String concatenation & escape sequences|Automatic memory cleanup — zero manual management|Lexer (tokenizer), recursive-descent parser, semantic analyzer"
+        data-tech="C++,Compiler Design,Lexer,Parser,Semantic Analysis,Type System"
+        data-github="https://github.com/Saqlain-mushtaq-alamin">
+        <div class="proj-visual proj-vis--compiler">
+          <div class="proj-vis-content">
+            <div class="vis-compiler">
+              <pre class="compiler-code">
+<span class="c-kw">number</span> result = <span class="c-num">42</span>
+<span class="c-kw">when</span> result > <span class="c-num">10</span>:
+  show(<span class="c-str">"Advanced!"</span>)
+<span class="c-kw">otherwise</span>:
+  show(<span class="c-str">"Keep going"</span>)
+
+<span class="c-ok">✓ Lexer → Parser → AST</span>
+<span class="c-ok">✓ Type-safe · Memory-safe</span></pre>
+            </div>
+          </div>
+          <div class="proj-hover-overlay">
+            <button class="proj-details-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Details
+            </button>
+            <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="proj-gh-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta"><span class="proj-category">C++ · Compiler Design · Systems</span><span class="proj-year">2024</span></div>
+          <h3 class="proj-title">MINI Compiler</h3>
+          <p class="proj-desc">Full compiler pipeline: lexer, parser, semantic analyzer, type-safe execution engine.</p>
+          <div class="proj-tech-row"><span>C++</span><span>Lexer</span><span>Parser</span><span>Type System</span></div>
+        </div>
+      </article>
+
+      <!-- Finanalyzer -->
+      <article class="proj-card" data-cat="java"
+        data-title="Finanalyzer — Accounting Automation Tool"
+        data-emoji="📊"
+        data-desc="A lightweight accounting tool that automates journal entries, general ledger management, and trial balance generation. Perfect for students and small businesses learning double-entry accounting."
+        data-features="Journal Entry creation & management|General Ledger automation|Trial Balance generation|Tabular math-based analysis|Clean CLI interface|Open source & extensible"
+        data-tech="Python,Accounting Automation,Data Analysis,CLI"
+        data-github="https://github.com/Saqlain-mushtaq-alamin/Finanalyzer-">
+        <div class="proj-visual proj-vis--finanalyzer">
+          <div class="proj-vis-content">
+            <div class="vis-chart">
+              <div class="bar-chart">
+                <div class="bc-bar" style="height:70%"><span>Jan</span></div>
+                <div class="bc-bar" style="height:50%"><span>Feb</span></div>
+                <div class="bc-bar bc-bar-hi" style="height:90%"><span>Mar</span></div>
+                <div class="bc-bar" style="height:65%"><span>Apr</span></div>
+                <div class="bc-bar" style="height:80%"><span>May</span></div>
+              </div>
+              <div class="chart-label">General Ledger</div>
+            </div>
+          </div>
+          <div class="proj-hover-overlay">
+            <button class="proj-details-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              Details
+            </button>
+            <a href="https://github.com/Saqlain-mushtaq-alamin/Finanalyzer-" target="_blank" class="proj-gh-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta"><span class="proj-category">Python · Accounting · CLI</span><span class="proj-year">2023</span></div>
+          <h3 class="proj-title">Finanalyzer</h3>
+          <p class="proj-desc">Automated accounting tool for journal entries, general ledgers, and trial balances.</p>
+          <div class="proj-tech-row"><span>Python</span><span>Accounting</span><span>CLI</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     CONTACT
+════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-heading center-h">Let's build something <em>great</em></h2>
+    <p class="section-sub center-s">Available for full-time roles, freelance projects, and interesting collaborations.</p>
+
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div class="contact-card">
+          <div class="cc-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          </div>
+          <div>
+            <div class="cc-label">Email</div>
+            <a href="mailto:amin86911@gmail.com" class="cc-val">amin86911@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.07 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.93v1.99z"/></svg>
+          </div>
+          <div>
+            <div class="cc-label">Phone</div>
+            <a href="tel:+8801306978727" class="cc-val">01306-978727</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="cc-label">Location</div>
+            <span class="cc-val">Savar, Dhaka, Bangladesh</span>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          </div>
+          <div>
+            <div class="cc-label">Freelance</div>
+            <span class="cc-val cc-available">Available · Fiverr</span>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank" class="csoc-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="csoc-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="cf-field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="cf-field">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="What's this about?">
+        </div>
+        <div class="cf-field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="cf-submit" id="cfSubmit">
+          <span id="cfLabel">Send Message</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+        <div class="cf-status" id="cfStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-brand">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="var(--accent)"/><path d="M8 20L14 8L20 20" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 16.5H18" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <span>Al Amin</span>
+        </a>
+        <p>Junior Full Stack Developer & AI Enthusiast — crafting intelligent systems from Dhaka, Bangladesh.</p>
+      </div>
+      <div class="footer-links">
+        <div class="fl-col">
+          <h5>Navigate</h5>
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="fl-col">
+          <h5>Connect</h5>
+          <a href="https://github.com/Saqlain-mushtaq-alamin" target="_blank">GitHub</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="mailto:amin86911@gmail.com">Email Me</a>
+          <a href="cv/MD.AL_AMIN.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Md Al Amin · Crafted with care in Dhaka</p>
+      <p class="footer-stack">HTML · CSS · JavaScript</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="btt" id="btt" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<!-- ═══════════════════════════════════
+     PROJECT DETAIL MODAL
+════════════════════════════════════ -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
 
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <div class="modal-header">
+      <span class="modal-emoji" id="modalEmoji"></span>
+      <div>
+        <h2 id="modalTitle"></h2>
+        <div class="modal-tech" id="modalTech"></div>
+      </div>
+    </div>
 
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100,
-            easing: 'ease-out-cubic'
-        });
+    <p class="modal-desc" id="modalDesc"></p>
 
-        // ============ NAVBAR ============
-        const navbar = document.getElementById('navbar');
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-        const allNavLinks = document.querySelectorAll('.nav-link');
+    <div class="modal-features-wrap">
+      <h4>Key Features</h4>
+      <ul class="modal-features" id="modalFeatures"></ul>
+    </div>
 
-        // Sticky navbar
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+    <div class="modal-video-wrap" id="modalVideoSection" style="display:none">
+      <h4>Demo Video</h4>
+      <div class="modal-video" id="modalVideo"></div>
+    </div>
 
-        // Mobile menu toggle
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
+    <a class="modal-gh" id="modalGithub" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      View on GitHub
+    </a>
+  </div>
+</div>
 
-        // Close menu on link click
-        allNavLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
+<script>
+// ═══════════════ THEME ═══════════════
+const html = document.documentElement;
+const themeToggle = document.getElementById('themeToggle');
+const saved = localStorage.getItem('theme') || 'dark';
+html.setAttribute('data-theme', saved);
 
-        // Active link on scroll
-        const sections = document.querySelectorAll('section');
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 150;
-                if (window.scrollY >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-            allNavLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        });
+themeToggle.addEventListener('click', () => {
+  const curr = html.getAttribute('data-theme');
+  const next = curr === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+});
 
-        // ============ TYPEWRITER ============
-        const words = ['Full Stack Developer', 'Backend Engineer', 'Mobile App Developer', 'ML Enthusiast', 'Problem Solver'];
-        let wordIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        const typewriterEl = document.getElementById('typewriter');
+// ═══════════════ HERO CANVAS — 3D particle space ═══════════════
+const canvas = document.getElementById('heroCanvas');
+const ctx = canvas.getContext('2d');
+let W, H, particles = [], lines = [];
 
-        function typeWriter() {
-            const currentWord = words[wordIndex];
-            if (isDeleting) {
-                typewriterEl.textContent = currentWord.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                typewriterEl.textContent = currentWord.substring(0, charIndex + 1);
-                charIndex++;
-            }
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', () => { resize(); init(); });
 
-            let speed = isDeleting ? 50 : 100;
+class Particle {
+  constructor() { this.reset(); }
+  reset() {
+    this.x = Math.random() * W;
+    this.y = Math.random() * H;
+    this.z = Math.random() * 1.5 + 0.2;
+    this.vx = (Math.random() - 0.5) * 0.4;
+    this.vy = (Math.random() - 0.5) * 0.4;
+    this.r = Math.random() * 1.8 + 0.3;
+    this.alpha = Math.random() * 0.6 + 0.1;
+  }
+  update() {
+    this.x += this.vx * this.z;
+    this.y += this.vy * this.z;
+    if (this.x < 0 || this.x > W || this.y < 0 || this.y > H) this.reset();
+  }
+  draw(accentColor) {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.r * this.z, 0, Math.PI * 2);
+    ctx.fillStyle = accentColor + Math.floor(this.alpha * 255).toString(16).padStart(2, '0');
+    ctx.fill();
+  }
+}
 
-            if (!isDeleting && charIndex === currentWord.length) {
-                speed = 2000;
-                isDeleting = true;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                wordIndex = (wordIndex + 1) % words.length;
-                speed = 500;
-            }
+function init() {
+  particles = Array.from({length: 120}, () => new Particle());
+}
+init();
 
-            setTimeout(typeWriter, speed);
-        }
-        typeWriter();
+let mouse = {x: W/2, y: H/2};
+window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
 
-        // ============ PROJECT FILTER ============
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const projectCards = document.querySelectorAll('.project-card');
+function getAccentColor() {
+  return html.getAttribute('data-theme') === 'light' ? '#2563eb' : '#6ee7f7';
+}
 
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+function loop() {
+  ctx.clearRect(0, 0, W, H);
+  const acc = getAccentColor();
 
-                const filter = btn.dataset.filter;
-                projectCards.forEach(card => {
-                    if (filter === 'all' || card.dataset.category === filter) {
-                        card.style.display = 'block';
-                        card.style.animation = 'fadeInUp 0.5s ease forwards';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
+  // Draw connecting lines
+  for (let i = 0; i < particles.length; i++) {
+    for (let j = i + 1; j < particles.length; j++) {
+      const p1 = particles[i], p2 = particles[j];
+      const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y);
+      if (dist < 110) {
+        ctx.beginPath();
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(p2.x, p2.y);
+        const alpha = (1 - dist / 110) * 0.12;
+        ctx.strokeStyle = acc + Math.floor(alpha * 255).toString(16).padStart(2, '0');
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+      }
+    }
+    // mouse attraction
+    const dm = Math.hypot(particles[i].x - mouse.x, particles[i].y - mouse.y);
+    if (dm < 150) {
+      ctx.beginPath();
+      ctx.moveTo(particles[i].x, particles[i].y);
+      ctx.lineTo(mouse.x, mouse.y);
+      const ma = (1 - dm / 150) * 0.18;
+      ctx.strokeStyle = acc + Math.floor(ma * 255).toString(16).padStart(2, '0');
+      ctx.lineWidth = 0.7;
+      ctx.stroke();
+    }
+    particles[i].update();
+    particles[i].draw(acc);
+  }
+  requestAnimationFrame(loop);
+}
+loop();
 
-        // ============ CONTACT FORM (Formspree) ============
-    
-        const FORMSPREE_ID = 'https://formspree.io/f/mojkdlbr';
+// ═══════════════ TYPEWRITER ═══════════════
+const words = [
+  'AI Desktop Assistants', 'Flutter Mobile Apps',
+  'FastAPI Backends', 'LLM-Powered Systems',
+  'ML Pipelines', 'Offline-First Apps'
+];
+let wi = 0, ci = 0, deleting = false;
+const tw = document.getElementById('typewriter');
 
-        document.getElementById('contactForm').addEventListener('submit', async function (e) {
-            e.preventDefault();
-            const btn = document.getElementById('submitBtn');
-            const label = document.getElementById('submitLabel');
-            const icon = document.getElementById('submitIcon');
-            const status = document.getElementById('formStatus');
-            const form = this;
+function typeLoop() {
+  const word = words[wi];
+  if (!deleting) {
+    tw.textContent = word.slice(0, ++ci);
+    if (ci === word.length) { deleting = true; setTimeout(typeLoop, 1600); return; }
+  } else {
+    tw.textContent = word.slice(0, --ci);
+    if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; }
+  }
+  setTimeout(typeLoop, deleting ? 40 : 80);
+}
+typeLoop();
 
-            // Sending state
-            btn.disabled = true;
-            label.textContent = 'Sending...';
-            icon.style.display = 'none';
-            status.textContent = '';
-            status.className = 'form-status';
+// ═══════════════ NAVBAR SCROLL ═══════════════
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 50);
+  document.getElementById('btt').classList.toggle('visible', window.scrollY > 400);
+});
 
-            const data = {
-                name: form.name.value,
-                email: form.email.value,
-                subject: form.subject.value,
-                message: form.message.value
-            };
+// ═══════════════ NAV ACTIVE SECTION ═══════════════
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nav-item');
 
-            if (FORMSPREE_ID === 'YOUR_FORM_ID') {
-                // Fallback: open mail client if Formspree not configured yet
-                const mailto = `mailto:alamin86911@gmail.com?subject=${encodeURIComponent(data.subject || 'Portfolio Contact')}&body=${encodeURIComponent('Name: ' + data.name + '\nEmail: ' + data.email + '\n\n' + data.message)}`;
-                window.location.href = mailto;
-                btn.disabled = false;
-                label.textContent = 'Send Message';
-                icon.style.display = '';
-                return;
-            }
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navItems.forEach(n => n.classList.toggle('active', n.dataset.section === e.target.id));
+    }
+  });
+}, { threshold: 0.4 });
+sections.forEach(s => io.observe(s));
 
-            try {
-                const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                    body: JSON.stringify(data)
-                });
+// ═══════════════ HAMBURGER ═══════════════
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+document.querySelectorAll('.mob-link, .mob-hire').forEach(l => {
+  l.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  });
+});
 
-                if (res.ok) {
-                    label.textContent = 'Message Sent ✓';
-                    btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-                    status.textContent = '✅ Thanks! I\'ll get back to you soon.';
-                    status.className = 'form-status form-status--success';
-                    form.reset();
-                    setTimeout(() => {
-                        label.textContent = 'Send Message';
-                        btn.style.background = '';
-                        btn.disabled = false;
-                        icon.style.display = '';
-                        status.textContent = '';
-                        status.className = 'form-status';
-                    }, 4000);
-                } else {
-                    throw new Error('Server error');
-                }
-            } catch {
-                label.textContent = 'Send Message';
-                icon.style.display = '';
-                btn.disabled = false;
-                status.textContent = '❌ Something went wrong. Please email me directly at alamin86911@gmail.com';
-                status.className = 'form-status form-status--error';
-            }
-        });
+// ═══════════════ SMOOTH SCROLL ═══════════════
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
 
-        // ============ BACK TO TOP ============
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+// ═══════════════ COUNTER ANIMATION ═══════════════
+const counters = document.querySelectorAll('.astat-num');
+const cObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const el = e.target;
+      const target = +el.dataset.target;
+      let count = 0;
+      const step = Math.ceil(target / 50);
+      const interval = setInterval(() => {
+        count = Math.min(count + step, target);
+        el.textContent = count;
+        if (count >= target) clearInterval(interval);
+      }, 30);
+      cObs.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+counters.forEach(c => cObs.observe(c));
 
-        // ============ SMOOTH SCROLL ============
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
+// ═══════════════ PROFICIENCY BARS ═══════════════
+const bars = document.querySelectorAll('.prof-fill');
+const bObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.width = e.target.style.getPropertyValue('--pct') || e.target.parentElement.style.getPropertyValue('--pct');
+      e.target.style.width = getComputedStyle(e.target).getPropertyValue('--pct');
+      e.target.classList.add('animated');
+      bObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+bars.forEach(b => bObs.observe(b));
 
-        // ============ PROJECT DETAIL MODAL ============
-        const modal = document.getElementById('projectModal');
-        const modalClose = document.getElementById('modalClose');
+// ═══════════════ SKILL TABS ═══════════════
+document.querySelectorAll('.skill-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.skill-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const cat = tab.dataset.cat;
+    document.querySelectorAll('.skill-orb').forEach(orb => {
+      const match = cat === 'all' || orb.dataset.cat === cat;
+      orb.style.opacity = match ? '1' : '0.15';
+      orb.style.transform = match ? 'scale(1)' : 'scale(0.85)';
+    });
+  });
+});
 
-        function openProjectModal(card) {
-            const title = card.dataset.title;
-            const emoji = card.dataset.emoji;
-            const desc = card.dataset.desc;
-            const features = card.dataset.features ? card.dataset.features.split('|') : [];
-            const tech = card.dataset.tech ? card.dataset.tech.split(',') : [];
-            const github = card.dataset.github || '#';
-            const video = card.dataset.video || '';
+// ═══════════════ PROJECT FILTERS ═══════════════
+document.querySelectorAll('.pf-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.pf-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    document.querySelectorAll('.proj-card').forEach(card => {
+      const cats = card.dataset.cat || '';
+      const visible = f === 'all' || cats.includes(f);
+      card.style.opacity = visible ? '1' : '0';
+      card.style.transform = visible ? '' : 'scale(0.95)';
+      card.style.pointerEvents = visible ? '' : 'none';
+    });
+  });
+});
 
-            document.getElementById('modalTitle').textContent = title;
-            document.getElementById('modalEmoji').textContent = emoji;
-            document.getElementById('modalDesc').textContent = desc;
+// ═══════════════ PROJECT MODAL ═══════════════
+const modal = document.getElementById('projectModal');
 
-            const techContainer = document.getElementById('modalTech');
-            techContainer.innerHTML = tech.map(t => '<span>' + t.trim() + '</span>').join('');
+function openModal(card) {
+  document.getElementById('modalTitle').textContent = card.dataset.title || '';
+  document.getElementById('modalEmoji').textContent = card.dataset.emoji || '📁';
+  document.getElementById('modalDesc').textContent = card.dataset.desc || '';
 
-            const featuresList = document.getElementById('modalFeatures');
-            featuresList.innerHTML = features.map(f => '<li>' + f.trim() + '</li>').join('');
+  const tech = (card.dataset.tech || '').split(',').filter(Boolean);
+  document.getElementById('modalTech').innerHTML = tech.map(t => `<span>${t.trim()}</span>`).join('');
 
-            document.getElementById('modalGithub').href = github;
+  const features = (card.dataset.features || '').split('|').filter(Boolean);
+  document.getElementById('modalFeatures').innerHTML = features.map(f => `<li>${f.trim()}</li>`).join('');
 
-            const videoSection = document.getElementById('modalVideoSection');
-            const videoWrapper = document.getElementById('modalVideo');
-            if (video) {
-                videoSection.style.display = 'block';
-                if (video.includes('youtube.com') || video.includes('youtu.be')) {
-                    const videoId = video.includes('youtu.be') ?
-                        video.split('/').pop().split('?')[0] :
-                        new URL(video).searchParams.get('v');
-                    videoWrapper.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + videoId + '" allowfullscreen loading="lazy" title="Project demo"></iframe>';
-                } else {
-                    videoWrapper.innerHTML = '<video controls preload="metadata"><source src="' + video + '" type="video/mp4">Your browser does not support the video tag.</video>';
-                }
-            } else {
-                videoSection.style.display = 'none';
-                videoWrapper.innerHTML = '';
-            }
+  document.getElementById('modalGithub').href = card.dataset.github || '#';
 
-            modal.classList.add('active');
-            document.body.classList.add('modal-open');
-        }
+  const video = card.dataset.video || '';
+  const vsec = document.getElementById('modalVideoSection');
+  const vwrap = document.getElementById('modalVideo');
+  if (video) {
+    vsec.style.display = 'block';
+    if (video.includes('youtube.com') || video.includes('youtu.be')) {
+      const id = video.includes('youtu.be') ? video.split('/').pop().split('?')[0] : new URL(video).searchParams.get('v');
+      vwrap.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}" allowfullscreen loading="lazy"></iframe>`;
+    }
+  } else {
+    vsec.style.display = 'none';
+    vwrap.innerHTML = '';
+  }
 
-        function closeProjectModal() {
-            modal.classList.remove('active');
-            document.body.classList.remove('modal-open');
-            const videoWrapper = document.getElementById('modalVideo');
-            setTimeout(() => { videoWrapper.innerHTML = ''; }, 350);
-        }
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
 
-        document.querySelectorAll('.project-detail-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                const card = btn.closest('.project-card');
-                if (card) openProjectModal(card);
-            });
-        });
+document.querySelectorAll('.proj-details-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const card = btn.closest('.proj-card');
+    if (card) openModal(card);
+  });
+});
 
-        modalClose.addEventListener('click', closeProjectModal);
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeProjectModal();
-        });
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal.classList.contains('active')) closeProjectModal();
-        });
-    </script>
+document.getElementById('modalClose').addEventListener('click', closeModal);
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function closeModal() {
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+  setTimeout(() => { document.getElementById('modalVideo').innerHTML = ''; }, 300);
+}
+
+// ═══════════════ SERVICE CARD GLOW MOUSE ═══════════════
+document.querySelectorAll('.svc-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    card.querySelector('.svc-glow').style.background =
+      `radial-gradient(circle at ${x}% ${y}%, var(--accent-glow) 0%, transparent 60%)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.querySelector('.svc-glow').style.background = '';
+  });
+});
+
+// ═══════════════ SCROLL REVEAL ═══════════════
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('revealed');
+      revealObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.svc-card, .proj-card, .about-img-frame, .about-text-col, .contact-card, .skill-orb, .prof-item').forEach(el => {
+  el.classList.add('reveal-el');
+  revealObs.observe(el);
+});
+
+// ═══════════════ BACK TO TOP ═══════════════
+document.getElementById('btt').addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+
+// ═══════════════ CONTACT FORM ═══════════════
+document.getElementById('contactForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn = document.getElementById('cfSubmit');
+  const label = document.getElementById('cfLabel');
+  const status = document.getElementById('cfStatus');
+  btn.disabled = true;
+  label.textContent = 'Sending...';
+
+  const data = {
+    name: e.target.name.value,
+    email: e.target.email.value,
+    subject: e.target.subject.value,
+    message: e.target.message.value
+  };
+
+  const FORMSPREE_ID = 'YOUR_FORM_ID';
+  if (FORMSPREE_ID === 'YOUR_FORM_ID') {
+    const mailto = `mailto:amin86911@gmail.com?subject=${encodeURIComponent(data.subject || 'Portfolio Contact')}&body=${encodeURIComponent('Name: ' + data.name + '\nEmail: ' + data.email + '\n\n' + data.message)}`;
+    window.location.href = mailto;
+    btn.disabled = false;
+    label.textContent = 'Send Message';
+    return;
+  }
+
+  try {
+    const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(data)
+    });
+    if (res.ok) {
+      label.textContent = 'Sent ✓';
+      status.textContent = 'Thanks! I\'ll reply soon.';
+      status.className = 'cf-status cf-success';
+      e.target.reset();
+      setTimeout(() => { label.textContent = 'Send Message'; status.textContent = ''; status.className = 'cf-status'; btn.disabled = false; }, 4000);
+    } else throw new Error();
+  } catch {
+    label.textContent = 'Send Message';
+    status.textContent = 'Something went wrong. Email me directly: amin86911@gmail.com';
+    status.className = 'cf-status cf-error';
+    btn.disabled = false;
+  }
+});
+</script>
 </body>
-
 </html>
