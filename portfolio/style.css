@@ -1250,6 +1250,58 @@ ul { list-style: none; }
   font-family: var(--font-mono);
 }
 
+/* Snake visual game  */
+.proj-vis--snake .snake-board{
+  background:#111827;
+  border-radius:12px;
+  padding:16px;
+  color:#fff;
+}
+
+.snake-grid{
+  height:140px;
+  width:340PX;
+  margin:12px 0;
+  border:2px solid #22c55e;
+  border-radius:8px;
+  background:
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size:20px 20px;
+  position:relative;
+}
+
+.snake-head{
+  position:absolute;
+  top:40px;
+  left:80px;
+  font-size:22px;
+  animation:snakeMove 2s infinite linear;
+}
+
+.snake-food{
+  position:absolute;
+  top:80px;
+  right:40px;
+  font-size:18px;
+}
+
+.snake-score{
+  color:#22c55e;
+  font-weight:700;
+}
+
+.snake-status{
+  color:#94a3b8;
+  font-size:.85rem;
+}
+
+@keyframes snakeMove{
+  0%{transform:translateX(0);}
+  50%{transform:translateX(30px);}
+  100%{transform:translateX(0);}
+}
+
 /* ══════════════════════════════════════════════════════
    CONTACT
 ══════════════════════════════════════════════════════ */
