@@ -414,14 +414,24 @@ ul { list-style: none; }
   margin-bottom: 28px;
   animation: fadeInUp 0.8s 0.35s ease both;
 }
-.hero-sub strong { color: var(--text); }
-
+.hero-sub strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+    border-bottom: 3px solid var(--accent);
+    border-bottom-left-radius: 12px;
+    
+    padding-bottom: 1px;
+    padding-left: 6px;
+}
 .hero-typerow {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 32px;
-  font-size: 14px;
+  font-size: 16px;
   animation: fadeInUp 0.8s 0.4s ease both;
 }
 .type-label { color: var(--text-faint); font-family: var(--font-mono); }
