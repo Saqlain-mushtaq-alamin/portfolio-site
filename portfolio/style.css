@@ -1172,6 +1172,7 @@ ul { list-style: none; }
   opacity: 0;
   transition: opacity var(--transition);
   backdrop-filter: blur(4px);
+  z-index: 100;
 }
 .proj-card:hover .proj-hover-overlay { opacity: 1; }
 
@@ -1248,6 +1249,122 @@ ul { list-style: none; }
   font-size: 11px;
   color: var(--text-muted);
   font-family: var(--font-mono);
+}
+
+/* Civitas visual */
+
+.proj-vis--civitas .city-dashboard{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+  font-size:.75rem;
+  color:#000000;
+}
+
+.city-map{
+  position:relative;
+  height:140px;
+  border-radius:12px;
+  overflow:hidden;
+  background:#0f172a;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+/* Roads */
+.road{
+  position:absolute;
+  background:#334155;
+}
+
+.road-h{
+  top:55px;
+  left:0;
+  width:100%;
+  height:30px;
+}
+
+.road-v{
+  left:50%;
+  top:0;
+  width:30px;
+  height:100%;
+  transform:translateX(-50%);
+}
+
+/* Buildings */
+.building{
+  position:absolute;
+  font-size:1.6rem;
+}
+
+.b1{top:10px;left:15px;}
+.b2{bottom:10px;left:20px;}
+.b3{top:15px;right:20px;}
+
+/* Cars */
+.car{
+  position:absolute;
+  font-size:1rem;
+  z-index:1;
+}
+
+.car-a{
+  top:60px;
+  transform: scaleX(-1);
+  animation: driveRight 6s linear infinite;
+}
+
+.car-b{
+  left:48%;
+  animation:driveDown 5s linear infinite;
+}
+
+/* NPCs */
+.npc{
+  position:absolute;
+  font-size:.9rem;
+  opacity:.85;
+}
+
+.npc-a{
+  bottom:20px;
+  right:30px;
+}
+
+.npc-b{
+  top:25px;
+  left:80px;
+}
+
+.city-footer{
+  margin-top:10px;
+  display:flex;
+  justify-content:space-between;
+  font-size:.75rem;
+  color:#94a3b8;
+}
+
+.city-live{
+  color:#22c55e;
+  font-weight:700;
+}
+
+@keyframes driveRight{
+  0%{
+    left:-20px;
+  }
+  100%{
+    left:100%;
+  }
+}
+
+@keyframes driveDown{
+  0%{
+    top:-20px;
+  }
+  100%{
+    top:100%;
+  }
 }
 
 /* Snake visual game  */
